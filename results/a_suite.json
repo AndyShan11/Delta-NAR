@@ -1,0 +1,174 @@
+{
+  "a1": {
+    "fixed_avg_degree_6": {
+      "1024": {
+        "affected_mean": 0.87,
+        "affected_pct": 0.1,
+        "affected_std": 4.22
+      },
+      "128": {
+        "affected_mean": 0.24,
+        "affected_pct": 0.2,
+        "affected_std": 0.92
+      },
+      "16": {
+        "affected_mean": 0.31,
+        "affected_pct": 1.9,
+        "affected_std": 1.12
+      },
+      "256": {
+        "affected_mean": 1.07,
+        "affected_pct": 0.4,
+        "affected_std": 6.05
+      },
+      "32": {
+        "affected_mean": 0.45,
+        "affected_pct": 1.4,
+        "affected_std": 1.99
+      },
+      "512": {
+        "affected_mean": 0.43,
+        "affected_pct": 0.1,
+        "affected_std": 1.48
+      },
+      "64": {
+        "affected_mean": 0.73,
+        "affected_pct": 1.1,
+        "affected_std": 2.64
+      }
+    },
+    "train_er_p03": {
+      "128": {
+        "affected_mean": 0.03,
+        "affected_pct": 0.0,
+        "affected_std": 0.2
+      },
+      "16": {
+        "affected_mean": 0.52,
+        "affected_pct": 3.2,
+        "affected_std": 1.41
+      },
+      "256": {
+        "affected_mean": 0.01,
+        "affected_pct": 0.0,
+        "affected_std": 0.1
+      },
+      "32": {
+        "affected_mean": 0.29,
+        "affected_pct": 0.9,
+        "affected_std": 1.54
+      },
+      "64": {
+        "affected_mean": 0.09,
+        "affected_pct": 0.1,
+        "affected_std": 0.49
+      }
+    }
+  },
+  "a2": {
+    "buckets": {
+      "0": {
+        "count": 1073,
+        "node_acc": 0.998
+      },
+      "1-2": {
+        "count": 321,
+        "node_acc": 0.97
+      },
+      "11+": {
+        "count": 19,
+        "node_acc": 0.793
+      },
+      "3-5": {
+        "count": 115,
+        "node_acc": 0.922
+      },
+      "6-10": {
+        "count": 64,
+        "node_acc": 0.882
+      }
+    },
+    "gate_recall": {
+      "mean": 0.9,
+      "samples": 519
+    }
+  },
+  "a4": {
+    "16": {
+      "DeltaNAR_n16": 0.991,
+      "DeltaNAR_n64": 0.999,
+      "Recompute_n16": 0.523,
+      "Recompute_n64": 0.156
+    },
+    "2": {
+      "DeltaNAR_n16": 0.989,
+      "DeltaNAR_n64": 0.998,
+      "Recompute_n16": 0.821,
+      "Recompute_n64": 0.453
+    },
+    "4": {
+      "DeltaNAR_n16": 0.993,
+      "DeltaNAR_n64": 0.998,
+      "Recompute_n16": 0.926,
+      "Recompute_n64": 0.609
+    },
+    "8": {
+      "DeltaNAR_n16": 0.991,
+      "DeltaNAR_n64": 0.998,
+      "Recompute_n16": 0.941,
+      "Recompute_n64": 0.649
+    }
+  },
+  "a5": {
+    "copy_margin": {
+      "0": 0.976,
+      "1": 0.974,
+      "2": 0.953,
+      "3": 0.957
+    },
+    "copy_scale": {
+      "1": 0.434,
+      "10": 0.998,
+      "2": 0.674,
+      "20": 0.998,
+      "5": 0.998
+    }
+  },
+  "a6": {
+    "DeltaNAR": {
+      "in_dist_weight": 0.998,
+      "ood_add_delete": 0.998
+    },
+    "Recompute": {
+      "in_dist_weight": 0.168,
+      "ood_add_delete": 0.17
+    }
+  },
+  "runs": [
+    {
+      "elapsed_sec": 66.3275899887085,
+      "returncode": 0,
+      "script": "exp_a1.py"
+    },
+    {
+      "elapsed_sec": 288.26954531669617,
+      "returncode": 0,
+      "script": "exp_a2.py"
+    },
+    {
+      "elapsed_sec": 626.7747838497162,
+      "returncode": 0,
+      "script": "exp_a4.py"
+    },
+    {
+      "elapsed_sec": 1215.2573745250702,
+      "returncode": 0,
+      "script": "exp_a5.py"
+    },
+    {
+      "elapsed_sec": 378.1164586544037,
+      "returncode": 0,
+      "script": "exp_a6.py"
+    }
+  ]
+}

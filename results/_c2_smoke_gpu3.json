@@ -1,0 +1,234 @@
+{
+  "args": {
+    "tasks": [
+      "sssp"
+    ],
+    "seeds": [
+      0
+    ],
+    "sizes": [
+      16
+    ],
+    "train_n": 16,
+    "train_episodes": 2,
+    "test_episodes": 2,
+    "epochs": 1,
+    "batch": 2,
+    "eval_batch": 1,
+    "hidden": 16,
+    "lr": 0.001,
+    "out": "results/_c2_smoke_gpu2.json",
+    "markdown": "_c2_smoke_gpu2.md",
+    "test_topology": "er",
+    "test_heavy_tail": false,
+    "test_weight_hi": 10,
+    "test_delta_kinds": null,
+    "train_delta_kinds": null,
+    "train_delta_size": 1,
+    "test_delta_size": 1,
+    "steps": 0,
+    "repair_weight": 1.0,
+    "critical_weight": 0.0,
+    "copy_safe_weight": 1.0,
+    "copy_safe_pos_weight": 20.0,
+    "use_copy_safe_gate": true,
+    "copy_margin": null,
+    "copy_scale": 5.0
+  },
+  "agg": {
+    "sssp": {
+      "DeltaNAR+repair": {
+        "16": {
+          "node_acc": [
+            0.9933333396911621,
+            0.0
+          ],
+          "graph_acc": [
+            0.9,
+            0.0
+          ],
+          "node_acc_v": [
+            0.9933333396911621,
+            0.0
+          ],
+          "graph_acc_v": [
+            0.9,
+            0.0
+          ],
+          "aff_f1": [
+            0.8,
+            0.0
+          ],
+          "affected_node_acc_v": [
+            1.0,
+            0.0
+          ],
+          "unaffected_node_acc_v": [
+            1.0,
+            0.0
+          ],
+          "changed_output_acc_v": [
+            1.0,
+            0.0
+          ],
+          "unchanged_output_acc_v": [
+            1.0,
+            0.0
+          ],
+          "copy_critical_acc_v": [
+            1.0,
+            0.0
+          ],
+          "copy_safe_acc_v": [
+            1.0,
+            0.0
+          ],
+          "pure_copy_node_acc_v": [
+            0.9933333396911621,
+            0.0
+          ],
+          "pure_copy_changed_acc_v": [
+            1.0,
+            0.0
+          ],
+          "pure_copy_critical_acc_v": [
+            1.0,
+            0.0
+          ],
+          "affected_fraction": [
+            0.013333333333333332,
+            0.0
+          ],
+          "changed_output_fraction": [
+            0.013333333333333332,
+            0.0
+          ],
+          "copy_critical_fraction": [
+            0.006666666666666666,
+            0.0
+          ],
+          "gate_precision": [
+            1.0,
+            0.0
+          ],
+          "gate_recall": [
+            0.8,
+            0.0
+          ],
+          "gate_f1_diag": [
+            0.8,
+            0.0
+          ],
+          "gate_fn_rate": [
+            1.0,
+            0.0
+          ],
+          "copy_critical_gate_precision": [
+            1.0,
+            0.0
+          ],
+          "copy_critical_gate_recall": [
+            0.9,
+            0.0
+          ],
+          "copy_critical_gate_f1": [
+            0.9,
+            0.0
+          ],
+          "copy_critical_gate_fn_rate": [
+            1.0,
+            0.0
+          ],
+          "pred_unaffected_rate": [
+            1.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "raw": {
+    "sssp": {
+      "16": {
+        "node_acc": [
+          0.9933333396911621
+        ],
+        "graph_acc": [
+          0.9
+        ],
+        "node_acc_v": [
+          0.9933333396911621
+        ],
+        "graph_acc_v": [
+          0.9
+        ],
+        "aff_f1": [
+          0.8
+        ],
+        "affected_node_acc_v": [
+          1.0
+        ],
+        "unaffected_node_acc_v": [
+          1.0
+        ],
+        "changed_output_acc_v": [
+          1.0
+        ],
+        "unchanged_output_acc_v": [
+          1.0
+        ],
+        "copy_critical_acc_v": [
+          1.0
+        ],
+        "copy_safe_acc_v": [
+          1.0
+        ],
+        "pure_copy_node_acc_v": [
+          0.9933333396911621
+        ],
+        "pure_copy_changed_acc_v": [
+          1.0
+        ],
+        "pure_copy_critical_acc_v": [
+          1.0
+        ],
+        "affected_fraction": [
+          0.013333333333333332
+        ],
+        "changed_output_fraction": [
+          0.013333333333333332
+        ],
+        "copy_critical_fraction": [
+          0.006666666666666666
+        ],
+        "gate_precision": [
+          1.0
+        ],
+        "gate_recall": [
+          0.8
+        ],
+        "gate_f1_diag": [
+          0.8
+        ],
+        "gate_fn_rate": [
+          1.0
+        ],
+        "copy_critical_gate_precision": [
+          1.0
+        ],
+        "copy_critical_gate_recall": [
+          0.9
+        ],
+        "copy_critical_gate_f1": [
+          0.9
+        ],
+        "copy_critical_gate_fn_rate": [
+          1.0
+        ],
+        "pred_unaffected_rate": [
+          1.0
+        ]
+      }
+    }
+  }
+}

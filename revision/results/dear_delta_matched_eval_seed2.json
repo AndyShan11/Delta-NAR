@@ -1,0 +1,64 @@
+﻿{
+  "status": "ok",
+  "checkpoint": "<REDACTED_RELATIVE_PATH>",
+  "protocol": "official static DEAR; post-edit graph only",
+  "args": {
+    "checkpoint": "<REDACTED_RELATIVE_PATH>",
+    "delta_code_root": "<REDACTED_RELATIVE_PATH>",
+    "sizes": [
+      16,
+      64,
+      128,
+      256
+    ],
+    "episodes": 100,
+    "batch_size": 1,
+    "seed0": 900000,
+    "delta_size": 1,
+    "weight_hi": 10,
+    "output": "<REDACTED_RELATIVE_PATH>"
+  },
+  "results": {
+    "16": {
+      "node_acc_v": 0.5435289377289377,
+      "graph_acc_v": 0.01,
+      "exact_predecessor_acc": 0.31556923076923077,
+      "graphs": 1.0,
+      "graphs_with_changed_output": 0.224,
+      "graphs_with_copy_critical_node": 0.178,
+      "changed_output_acc_v": 0.46119614512471657,
+      "copy_critical_acc_v": 0.41498127340823976
+    },
+    "64": {
+      "node_acc_v": 0.42593650793650795,
+      "graph_acc_v": 0.0,
+      "exact_predecessor_acc": 0.2431428571428571,
+      "graphs": 1.0,
+      "graphs_with_changed_output": 0.058,
+      "graphs_with_copy_critical_node": 0.052,
+      "changed_output_acc_v": 0.3297109021246952,
+      "copy_critical_acc_v": 0.34935897435897434
+    },
+    "128": {
+      "node_acc_v": 0.3703937007874016,
+      "graph_acc_v": 0.0,
+      "exact_predecessor_acc": 0.19672440944881892,
+      "graphs": 1.0,
+      "graphs_with_changed_output": 0.028,
+      "graphs_with_copy_critical_node": 0.022,
+      "changed_output_acc_v": 0.32142857142857145,
+      "copy_critical_acc_v": 0.3181818181818182
+    },
+    "256": {
+      "node_acc_v": 0.2914980392156863,
+      "graph_acc_v": 0.0,
+      "exact_predecessor_acc": 0.15213333333333331,
+      "graphs": 1.0,
+      "graphs_with_changed_output": 0.02,
+      "graphs_with_copy_critical_node": 0.008,
+      "changed_output_acc_v": 0.4333333333333333,
+      "copy_critical_acc_v": 0.625
+    }
+  },
+  "elapsed_seconds": 140.75771403312683
+}

@@ -1,0 +1,14 @@
+{
+  "status": "ok",
+  "error": null,
+  "elapsed_seconds": 3223.939692258835,
+  "seed": 4,
+  "protocol": "official DEAR architecture trained on matched post-edit graphs",
+  "inputs": "post-edit weighted graph and source only",
+  "previous_solution_visible": false,
+  "edit_metadata_visible": false,
+  "train_samples": 10000,
+  "train_n": 16,
+  "test_n": 64,
+  "epochs": 100
+}

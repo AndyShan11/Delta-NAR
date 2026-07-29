@@ -1,0 +1,608 @@
+{
+  "args": {
+    "tasks": [
+      "sssp"
+    ],
+    "seeds": [
+      0
+    ],
+    "sizes": [
+      16,
+      32,
+      64
+    ],
+    "train_n": 16,
+    "train_episodes": 180,
+    "test_episodes": 80,
+    "epochs": 25,
+    "batch": 64,
+    "eval_batch": 16,
+    "hidden": 96,
+    "lr": 0.001,
+    "out": "results/AHR_copysafegate_sssp_seed0.json",
+    "markdown": "RESULTS_AHR_COPYSAFEGATE_sssp_seed0.md",
+    "test_topology": "er",
+    "test_heavy_tail": false,
+    "test_weight_hi": 10,
+    "test_delta_kinds": null,
+    "train_delta_kinds": null,
+    "train_delta_size": 4,
+    "test_delta_size": 12,
+    "steps": 0,
+    "repair_weight": 1.0,
+    "critical_weight": 0.0,
+    "copy_safe_weight": 1.0,
+    "copy_safe_pos_weight": 20.0,
+    "use_copy_safe_gate": true,
+    "copy_margin": null,
+    "copy_scale": 5.0
+  },
+  "agg": {
+    "sssp": {
+      "DeltaNAR+repair": {
+        "16": {
+          "node_acc": [
+            0.9007081437110901,
+            0.0
+          ],
+          "graph_acc": [
+            0.26,
+            0.0
+          ],
+          "node_acc_v": [
+            0.9235639381408691,
+            0.0
+          ],
+          "graph_acc_v": [
+            0.36,
+            0.0
+          ],
+          "aff_f1": [
+            0.8780069356416904,
+            0.0
+          ],
+          "affected_node_acc_v": [
+            0.7922571587562561,
+            0.0
+          ],
+          "unaffected_node_acc_v": [
+            0.9782100462913513,
+            0.0
+          ],
+          "changed_output_acc_v": [
+            0.7845071864128113,
+            0.0
+          ],
+          "unchanged_output_acc_v": [
+            0.9867536401748658,
+            0.0
+          ],
+          "copy_critical_acc_v": [
+            0.6305944919586182,
+            0.0
+          ],
+          "copy_safe_acc_v": [
+            0.9820408010482788,
+            0.0
+          ],
+          "pure_copy_node_acc_v": [
+            0.8328532242774963,
+            0.0
+          ],
+          "pure_copy_changed_acc_v": [
+            0.4636457931995392,
+            0.0
+          ],
+          "pure_copy_critical_acc_v": [
+            1.0,
+            0.0
+          ],
+          "affected_fraction": [
+            0.2961801158588665,
+            0.0
+          ],
+          "changed_output_fraction": [
+            0.3147538078810872,
+            0.0
+          ],
+          "copy_critical_fraction": [
+            0.16714679800905338,
+            0.0
+          ],
+          "gate_precision": [
+            0.8174944031950502,
+            0.0
+          ],
+          "gate_recall": [
+            0.9836179045417243,
+            0.0
+          ],
+          "gate_f1_diag": [
+            0.8901034233564379,
+            0.0
+          ],
+          "gate_fn_rate": [
+            0.01638209545827604,
+            0.0
+          ],
+          "copy_critical_gate_precision": [
+            0.466846954275497,
+            0.0
+          ],
+          "copy_critical_gate_recall": [
+            0.9914211058104273,
+            0.0
+          ],
+          "copy_critical_gate_f1": [
+            0.6308584329792946,
+            0.0
+          ],
+          "copy_critical_gate_fn_rate": [
+            0.00857889418957272,
+            0.0
+          ],
+          "pred_unaffected_rate": [
+            0.64399746985825,
+            0.0
+          ]
+        },
+        "32": {
+          "node_acc": [
+            0.9337096452713013,
+            0.0
+          ],
+          "graph_acc": [
+            0.3,
+            0.0
+          ],
+          "node_acc_v": [
+            0.9474193334579468,
+            0.0
+          ],
+          "graph_acc_v": [
+            0.3425,
+            0.0
+          ],
+          "aff_f1": [
+            0.7367807489690922,
+            0.0
+          ],
+          "affected_node_acc_v": [
+            0.6444444668292999,
+            0.0
+          ],
+          "unaffected_node_acc_v": [
+            0.9749758815765381,
+            0.0
+          ],
+          "changed_output_acc_v": [
+            0.6236329340934753,
+            0.0
+          ],
+          "unchanged_output_acc_v": [
+            0.9842114305496216,
+            0.0
+          ],
+          "copy_critical_acc_v": [
+            0.4097278356552124,
+            0.0
+          ],
+          "copy_safe_acc_v": [
+            0.9816245341300964,
+            0.0
+          ],
+          "pure_copy_node_acc_v": [
+            0.9403225588798523,
+            0.0
+          ],
+          "pure_copy_changed_acc_v": [
+            0.4166491770744324,
+            0.0
+          ],
+          "pure_copy_critical_acc_v": [
+            1.0,
+            0.0
+          ],
+          "affected_fraction": [
+            0.08588709677419355,
+            0.0
+          ],
+          "changed_output_fraction": [
+            0.10387096774193548,
+            0.0
+          ],
+          "copy_critical_fraction": [
+            0.05967741935483871,
+            0.0
+          ],
+          "gate_precision": [
+            0.591750686201321,
+            0.0
+          ],
+          "gate_recall": [
+            0.9924345488546051,
+            0.0
+          ],
+          "gate_f1_diag": [
+            0.737276578955312,
+            0.0
+          ],
+          "gate_fn_rate": [
+            0.007565451145395045,
+            0.0
+          ],
+          "copy_critical_gate_precision": [
+            0.4227937546385704,
+            0.0
+          ],
+          "copy_critical_gate_recall": [
+            0.9963973063973063,
+            0.0
+          ],
+          "copy_critical_gate_f1": [
+            0.5851697084700959,
+            0.0
+          ],
+          "copy_critical_gate_fn_rate": [
+            0.003602693602693603,
+            0.0
+          ],
+          "pred_unaffected_rate": [
+            0.8544354838709673,
+            0.0
+          ]
+        },
+        "64": {
+          "node_acc": [
+            0.9620635485649109,
+            0.0
+          ],
+          "graph_acc": [
+            0.39,
+            0.0
+          ],
+          "node_acc_v": [
+            0.9708730745315551,
+            0.0
+          ],
+          "graph_acc_v": [
+            0.4475,
+            0.0
+          ],
+          "aff_f1": [
+            0.5173679022380656,
+            0.0
+          ],
+          "affected_node_acc_v": [
+            0.5328671890497207,
+            0.0
+          ],
+          "unaffected_node_acc_v": [
+            0.9814580464363098,
+            0.0
+          ],
+          "changed_output_acc_v": [
+            0.5344054400920868,
+            0.0
+          ],
+          "unchanged_output_acc_v": [
+            0.9856348729133606,
+            0.0
+          ],
+          "copy_critical_acc_v": [
+            0.37715467989444734,
+            0.0
+          ],
+          "copy_safe_acc_v": [
+            0.9845939517021179,
+            0.0
+          ],
+          "pure_copy_node_acc_v": [
+            0.9796032309532166,
+            0.0
+          ],
+          "pure_copy_changed_acc_v": [
+            0.43728129893541334,
+            0.0
+          ],
+          "pure_copy_critical_acc_v": [
+            1.0,
+            0.0
+          ],
+          "affected_fraction": [
+            0.02670634920634921,
+            0.0
+          ],
+          "changed_output_fraction": [
+            0.03575396825396825,
+            0.0
+          ],
+          "copy_critical_fraction": [
+            0.0203968253968254,
+            0.0
+          ],
+          "gate_precision": [
+            0.37696370570841986,
+            0.0
+          ],
+          "gate_recall": [
+            0.9770286076978054,
+            0.0
+          ],
+          "gate_f1_diag": [
+            0.5192641694900866,
+            0.0
+          ],
+          "gate_fn_rate": [
+            0.022971392302194645,
+            0.0
+          ],
+          "copy_critical_gate_precision": [
+            0.3081988661424797,
+            0.0
+          ],
+          "copy_critical_gate_recall": [
+            0.9761165536591068,
+            0.0
+          ],
+          "copy_critical_gate_f1": [
+            0.4479561096063706,
+            0.0
+          ],
+          "copy_critical_gate_fn_rate": [
+            0.02388344634089315,
+            0.0
+          ],
+          "pred_unaffected_rate": [
+            0.9251984126984125,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "raw": {
+    "sssp": {
+      "16": {
+        "node_acc": [
+          0.9007081437110901
+        ],
+        "graph_acc": [
+          0.26
+        ],
+        "node_acc_v": [
+          0.9235639381408691
+        ],
+        "graph_acc_v": [
+          0.36
+        ],
+        "aff_f1": [
+          0.8780069356416904
+        ],
+        "affected_node_acc_v": [
+          0.7922571587562561
+        ],
+        "unaffected_node_acc_v": [
+          0.9782100462913513
+        ],
+        "changed_output_acc_v": [
+          0.7845071864128113
+        ],
+        "unchanged_output_acc_v": [
+          0.9867536401748658
+        ],
+        "copy_critical_acc_v": [
+          0.6305944919586182
+        ],
+        "copy_safe_acc_v": [
+          0.9820408010482788
+        ],
+        "pure_copy_node_acc_v": [
+          0.8328532242774963
+        ],
+        "pure_copy_changed_acc_v": [
+          0.4636457931995392
+        ],
+        "pure_copy_critical_acc_v": [
+          1.0
+        ],
+        "affected_fraction": [
+          0.2961801158588665
+        ],
+        "changed_output_fraction": [
+          0.3147538078810872
+        ],
+        "copy_critical_fraction": [
+          0.16714679800905338
+        ],
+        "gate_precision": [
+          0.8174944031950502
+        ],
+        "gate_recall": [
+          0.9836179045417243
+        ],
+        "gate_f1_diag": [
+          0.8901034233564379
+        ],
+        "gate_fn_rate": [
+          0.01638209545827604
+        ],
+        "copy_critical_gate_precision": [
+          0.466846954275497
+        ],
+        "copy_critical_gate_recall": [
+          0.9914211058104273
+        ],
+        "copy_critical_gate_f1": [
+          0.6308584329792946
+        ],
+        "copy_critical_gate_fn_rate": [
+          0.00857889418957272
+        ],
+        "pred_unaffected_rate": [
+          0.64399746985825
+        ]
+      },
+      "32": {
+        "node_acc": [
+          0.9337096452713013
+        ],
+        "graph_acc": [
+          0.3
+        ],
+        "node_acc_v": [
+          0.9474193334579468
+        ],
+        "graph_acc_v": [
+          0.3425
+        ],
+        "aff_f1": [
+          0.7367807489690922
+        ],
+        "affected_node_acc_v": [
+          0.6444444668292999
+        ],
+        "unaffected_node_acc_v": [
+          0.9749758815765381
+        ],
+        "changed_output_acc_v": [
+          0.6236329340934753
+        ],
+        "unchanged_output_acc_v": [
+          0.9842114305496216
+        ],
+        "copy_critical_acc_v": [
+          0.4097278356552124
+        ],
+        "copy_safe_acc_v": [
+          0.9816245341300964
+        ],
+        "pure_copy_node_acc_v": [
+          0.9403225588798523
+        ],
+        "pure_copy_changed_acc_v": [
+          0.4166491770744324
+        ],
+        "pure_copy_critical_acc_v": [
+          1.0
+        ],
+        "affected_fraction": [
+          0.08588709677419355
+        ],
+        "changed_output_fraction": [
+          0.10387096774193548
+        ],
+        "copy_critical_fraction": [
+          0.05967741935483871
+        ],
+        "gate_precision": [
+          0.591750686201321
+        ],
+        "gate_recall": [
+          0.9924345488546051
+        ],
+        "gate_f1_diag": [
+          0.737276578955312
+        ],
+        "gate_fn_rate": [
+          0.007565451145395045
+        ],
+        "copy_critical_gate_precision": [
+          0.4227937546385704
+        ],
+        "copy_critical_gate_recall": [
+          0.9963973063973063
+        ],
+        "copy_critical_gate_f1": [
+          0.5851697084700959
+        ],
+        "copy_critical_gate_fn_rate": [
+          0.003602693602693603
+        ],
+        "pred_unaffected_rate": [
+          0.8544354838709673
+        ]
+      },
+      "64": {
+        "node_acc": [
+          0.9620635485649109
+        ],
+        "graph_acc": [
+          0.39
+        ],
+        "node_acc_v": [
+          0.9708730745315551
+        ],
+        "graph_acc_v": [
+          0.4475
+        ],
+        "aff_f1": [
+          0.5173679022380656
+        ],
+        "affected_node_acc_v": [
+          0.5328671890497207
+        ],
+        "unaffected_node_acc_v": [
+          0.9814580464363098
+        ],
+        "changed_output_acc_v": [
+          0.5344054400920868
+        ],
+        "unchanged_output_acc_v": [
+          0.9856348729133606
+        ],
+        "copy_critical_acc_v": [
+          0.37715467989444734
+        ],
+        "copy_safe_acc_v": [
+          0.9845939517021179
+        ],
+        "pure_copy_node_acc_v": [
+          0.9796032309532166
+        ],
+        "pure_copy_changed_acc_v": [
+          0.43728129893541334
+        ],
+        "pure_copy_critical_acc_v": [
+          1.0
+        ],
+        "affected_fraction": [
+          0.02670634920634921
+        ],
+        "changed_output_fraction": [
+          0.03575396825396825
+        ],
+        "copy_critical_fraction": [
+          0.0203968253968254
+        ],
+        "gate_precision": [
+          0.37696370570841986
+        ],
+        "gate_recall": [
+          0.9770286076978054
+        ],
+        "gate_f1_diag": [
+          0.5192641694900866
+        ],
+        "gate_fn_rate": [
+          0.022971392302194645
+        ],
+        "copy_critical_gate_precision": [
+          0.3081988661424797
+        ],
+        "copy_critical_gate_recall": [
+          0.9761165536591068
+        ],
+        "copy_critical_gate_f1": [
+          0.4479561096063706
+        ],
+        "copy_critical_gate_fn_rate": [
+          0.02388344634089315
+        ],
+        "pred_unaffected_rate": [
+          0.9251984126984125
+        ]
+      }
+    }
+  }
+}

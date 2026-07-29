@@ -1,0 +1,79 @@
+{
+  "args": {
+    "tasks": [
+      "sssp"
+    ],
+    "models": [
+      "DeltaNAR"
+    ],
+    "seeds": [
+      0
+    ],
+    "sizes": [
+      64
+    ],
+    "train_n": 16,
+    "train_episodes": 24,
+    "test_episodes": 12,
+    "epochs": 2,
+    "batch": 64,
+    "eval_batch": 8,
+    "hidden": 128,
+    "lr": 0.001,
+    "out": "results/_sg.json",
+    "test_topology": "grid",
+    "test_heavy_tail": false,
+    "test_weight_hi": 10
+  },
+  "agg": {
+    "sssp": {
+      "DeltaNAR": {
+        "64": {
+          "node_acc": [
+            0.9777778347333272,
+            0.0
+          ],
+          "graph_acc": [
+            0.6666666666666666,
+            0.0
+          ],
+          "node_acc_v": [
+            0.9796296874682109,
+            0.0
+          ],
+          "graph_acc_v": [
+            0.6666666666666666,
+            0.0
+          ],
+          "aff_f1": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "raw": {
+    "sssp": {
+      "DeltaNAR": {
+        "64": {
+          "node_acc": [
+            0.9777778347333272
+          ],
+          "graph_acc": [
+            0.6666666666666666
+          ],
+          "node_acc_v": [
+            0.9796296874682109
+          ],
+          "graph_acc_v": [
+            0.6666666666666666
+          ],
+          "aff_f1": [
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}
