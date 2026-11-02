@@ -1,20 +1,31 @@
 {
-  "stage": "old_model_development_only",
-  "published_snapshot": "2026-11-02T23:01:26.321251+08:00",
+  "stage": "development_cases_and_exact_input_profile",
+  "published_snapshot": "2026-11-03T01:33:17.369590+08:00",
   "public_inputs": "Synthetic graph cases and saved predictions only.",
   "case_views": 7,
   "unique_graph_inputs": 5,
   "final_matched_model_results_complete": false,
   "formal_report_available": false,
+  "exact_input_profile_graphs": 5200,
+  "exact_input_profile_has_neural_predictions": false,
+  "exact_input_profile_source_sha256": "666a9f3ae6873269b0266d3f185bf240b0d996ce53b2833e582c420d18d73f85",
   "files": {
-    "index.html": "97ba9bbbba4bdffce500c9c54a5544922134c4ec352c26e81dac852cabd7897f",
+    "index.html": "a78d7d50c4381a71b9d6691753a0098e8e02debf4bd0cd212bf2a59f52cd7156",
     "cases/index.html": "23fbeabaa68141593349c5ae68dafd438f15184c501cb7b3fa4c8c3c2e55937b",
     "cases/case_data.json": "10a8cd80429cfcdeb8e8d27db2bfceeac921066c6145641fd0bfd267a285b114",
     "assets/tiny_route_case.png": "c3b850358287d9375488936e8a68085f16e3e3ab6257a1d94ffd649bff4b517a",
     "assets/tiny_route_case.pdf": "160b10e2e85b05f50694bba4950b408b870471bf2271c88eb951b624c3ebe82b",
-    "assets/tiny_route_case.svg": "d84cec9bc51b63c9c58fc6310a3628f0be8fe42499fb0f9eddb49cc621fdf0b9"
+    "assets/tiny_route_case.svg": "d84cec9bc51b63c9c58fc6310a3628f0be8fe42499fb0f9eddb49cc621fdf0b9",
+    "assets/node_metric_definitions.png": "c403131106ceefa8fbd618d8c9f2bdaa8c6f4cc332f3b063c31763902298cbe7",
+    "assets/node_metric_definitions.pdf": "ea0446b6c9a6c0afbf106ed30c381773df5d4069d632536911db8e54280a9b59",
+    "assets/old_witness_refresh_viability.png": "c0f3801c9beebc8ff48040993f3b48ee1d73b0c32a69032ad0eb6668c1b67476",
+    "assets/old_witness_refresh_viability.pdf": "fa9fbec5545617c5815b7226741f9bfb27ea92a30009639bd4ca8fa5132373ef",
+    "assets/graph_size_and_optimal_hops.png": "ae288c97d98af00febce4b59f4606370017ae07490a6c09369781f1253482121",
+    "assets/graph_size_and_optimal_hops.pdf": "4bbbd908496e42aa3c17221410e10379faf2d1f3fa475f657a804bd028b64383",
+    "data/input_profile_summary.json": "3fab8fca1dc661463a1a2dcf2150ac7f0d95ef5c3d6681034bda50ac77cfbe0d",
+    "data/node_metric_summary.json": "2d8ca8b6d231baa7a418670506c3f025f87ef258f06aa67330a6684aa615b173"
   },
   "selection_data_sha256": "f0fc9b02710b0e85fb69a708146a8c99cd7950d2fbe6771c1782cdcc7117f41a",
-  "builder_source_sha256": "97a9cdca08e81b709f853345b371400f6d1c2f35183734b8f29ee3933efc05fc",
+  "builder_source_sha256": "dc7f8e487d865b8930a2323964d7cdb325474fdd31359302893264bc7b4baa9d",
   "interpretation": "Illustrative best/worst cases, not a prevalence estimate. The full study remains in progress."
 }

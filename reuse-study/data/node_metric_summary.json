@@ -1,0 +1,522 @@
+[
+  {
+    "task": "bottleneck",
+    "n": 32,
+    "family": "chain",
+    "unique_graphs": 100,
+    "local_node_accuracy": 1.0,
+    "path_node_accuracy": 1.0,
+    "full_state_node_accuracy": 0.032258064516129004,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 32,
+    "family": "dense",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9987096774193549,
+    "path_node_accuracy": 0.9919354838709676,
+    "full_state_node_accuracy": 0.9909677419354839,
+    "graph_full_state_correct": 0.93
+  },
+  {
+    "task": "bottleneck",
+    "n": 32,
+    "family": "diamond",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.967741935483871,
+    "path_node_accuracy": 0.06451612903225812,
+    "full_state_node_accuracy": 0.032258064516129004,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 32,
+    "family": "long_detour",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.967741935483871,
+    "path_node_accuracy": 0.9032258064516128,
+    "full_state_node_accuracy": 0.4516129032258065,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 32,
+    "family": "sparse",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9990322580645161,
+    "path_node_accuracy": 0.9954838709677419,
+    "full_state_node_accuracy": 0.9912903225806451,
+    "graph_full_state_correct": 0.91
+  },
+  {
+    "task": "bottleneck",
+    "n": 64,
+    "family": "chain",
+    "unique_graphs": 100,
+    "local_node_accuracy": 1.0,
+    "path_node_accuracy": 1.0,
+    "full_state_node_accuracy": 0.015873015873015928,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 64,
+    "family": "dense",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9993650793650793,
+    "path_node_accuracy": 0.9992063492063492,
+    "full_state_node_accuracy": 0.9992063492063492,
+    "graph_full_state_correct": 0.96
+  },
+  {
+    "task": "bottleneck",
+    "n": 64,
+    "family": "diamond",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9841269841269842,
+    "path_node_accuracy": 0.031746031746031744,
+    "full_state_node_accuracy": 0.015873015873015928,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 64,
+    "family": "long_detour",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9841269841269842,
+    "path_node_accuracy": 0.9523809523809522,
+    "full_state_node_accuracy": 0.4761904761904761,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 64,
+    "family": "sparse",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.999047619047619,
+    "path_node_accuracy": 0.9928571428571429,
+    "full_state_node_accuracy": 0.9912698412698413,
+    "graph_full_state_correct": 0.9
+  },
+  {
+    "task": "bottleneck",
+    "n": 128,
+    "family": "chain",
+    "unique_graphs": 100,
+    "local_node_accuracy": 1.0,
+    "path_node_accuracy": 1.0,
+    "full_state_node_accuracy": 0.007874015748031482,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 128,
+    "family": "dense",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9998425196850395,
+    "path_node_accuracy": 0.9996850393700788,
+    "full_state_node_accuracy": 0.9996850393700788,
+    "graph_full_state_correct": 0.98
+  },
+  {
+    "task": "bottleneck",
+    "n": 128,
+    "family": "diamond",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9921259842519686,
+    "path_node_accuracy": 0.015748031496062964,
+    "full_state_node_accuracy": 0.007874015748031482,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 128,
+    "family": "long_detour",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9921259842519686,
+    "path_node_accuracy": 0.9763779527559054,
+    "full_state_node_accuracy": 0.4881889763779527,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 128,
+    "family": "sparse",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9998425196850395,
+    "path_node_accuracy": 0.9998425196850395,
+    "full_state_node_accuracy": 0.9993700787401575,
+    "graph_full_state_correct": 0.94
+  },
+  {
+    "task": "bottleneck",
+    "n": 256,
+    "family": "chain",
+    "unique_graphs": 100,
+    "local_node_accuracy": 1.0,
+    "path_node_accuracy": 1.0,
+    "full_state_node_accuracy": 0.0039215686274509665,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 256,
+    "family": "dense",
+    "unique_graphs": 100,
+    "local_node_accuracy": 1.0,
+    "path_node_accuracy": 1.0,
+    "full_state_node_accuracy": 1.0,
+    "graph_full_state_correct": 1.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 256,
+    "family": "diamond",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.996078431372549,
+    "path_node_accuracy": 0.007843137254901933,
+    "full_state_node_accuracy": 0.0039215686274509665,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 256,
+    "family": "long_detour",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.996078431372549,
+    "path_node_accuracy": 0.9882352941176471,
+    "full_state_node_accuracy": 0.49411764705882355,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 256,
+    "family": "sparse",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9997640883124903,
+    "path_node_accuracy": 0.9990160568164274,
+    "full_state_node_accuracy": 0.9978431372549019,
+    "graph_full_state_correct": 0.93
+  },
+  {
+    "task": "bottleneck",
+    "n": 512,
+    "family": "bridge_value",
+    "unique_graphs": 100,
+    "local_node_accuracy": 1.0,
+    "path_node_accuracy": 1.0,
+    "full_state_node_accuracy": 0.9980430528375734,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 512,
+    "family": "chain",
+    "unique_graphs": 100,
+    "local_node_accuracy": 1.0,
+    "path_node_accuracy": 1.0,
+    "full_state_node_accuracy": 0.00195694716242667,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 512,
+    "family": "dense",
+    "unique_graphs": 100,
+    "local_node_accuracy": 1.0,
+    "path_node_accuracy": 1.0,
+    "full_state_node_accuracy": 1.0,
+    "graph_full_state_correct": 1.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 512,
+    "family": "diamond",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9980430528375734,
+    "path_node_accuracy": 0.003913894324853229,
+    "full_state_node_accuracy": 0.00195694716242667,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 512,
+    "family": "long_detour",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9980430528375734,
+    "path_node_accuracy": 0.99412915851272,
+    "full_state_node_accuracy": 0.49706457925636,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "bottleneck",
+    "n": 512,
+    "family": "sparse",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9998822369211142,
+    "path_node_accuracy": 0.9994495527944492,
+    "full_state_node_accuracy": 0.9992563600782779,
+    "graph_full_state_correct": 0.92
+  },
+  {
+    "task": "sssp",
+    "n": 32,
+    "family": "chain",
+    "unique_graphs": 100,
+    "local_node_accuracy": 1.0,
+    "path_node_accuracy": 1.0,
+    "full_state_node_accuracy": 0.032258064516129004,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "sssp",
+    "n": 32,
+    "family": "dense",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9990322580645161,
+    "path_node_accuracy": 0.9987096774193549,
+    "full_state_node_accuracy": 0.9958064516129032,
+    "graph_full_state_correct": 0.94
+  },
+  {
+    "task": "sssp",
+    "n": 32,
+    "family": "diamond",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.967741935483871,
+    "path_node_accuracy": 0.06451612903225812,
+    "full_state_node_accuracy": 0.032258064516129004,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "sssp",
+    "n": 32,
+    "family": "long_detour",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.967741935483871,
+    "path_node_accuracy": 0.9032258064516128,
+    "full_state_node_accuracy": 0.4516129032258065,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "sssp",
+    "n": 32,
+    "family": "sparse",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.997741935483871,
+    "path_node_accuracy": 0.9964516129032258,
+    "full_state_node_accuracy": 0.9851612903225806,
+    "graph_full_state_correct": 0.81
+  },
+  {
+    "task": "sssp",
+    "n": 64,
+    "family": "chain",
+    "unique_graphs": 100,
+    "local_node_accuracy": 1.0,
+    "path_node_accuracy": 1.0,
+    "full_state_node_accuracy": 0.015873015873015928,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "sssp",
+    "n": 64,
+    "family": "dense",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9987301587301587,
+    "path_node_accuracy": 0.9977777777777778,
+    "full_state_node_accuracy": 0.9963492063492063,
+    "graph_full_state_correct": 0.94
+  },
+  {
+    "task": "sssp",
+    "n": 64,
+    "family": "diamond",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9841269841269842,
+    "path_node_accuracy": 0.031746031746031744,
+    "full_state_node_accuracy": 0.015873015873015928,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "sssp",
+    "n": 64,
+    "family": "long_detour",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9841269841269842,
+    "path_node_accuracy": 0.9523809523809522,
+    "full_state_node_accuracy": 0.4761904761904761,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "sssp",
+    "n": 64,
+    "family": "sparse",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9984075780849975,
+    "path_node_accuracy": 0.9955504352278546,
+    "full_state_node_accuracy": 0.9888888888888888,
+    "graph_full_state_correct": 0.83
+  },
+  {
+    "task": "sssp",
+    "n": 128,
+    "family": "chain",
+    "unique_graphs": 100,
+    "local_node_accuracy": 1.0,
+    "path_node_accuracy": 1.0,
+    "full_state_node_accuracy": 0.007874015748031482,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "sssp",
+    "n": 128,
+    "family": "dense",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9997637795275591,
+    "path_node_accuracy": 0.9996062992125984,
+    "full_state_node_accuracy": 0.9992125984251969,
+    "graph_full_state_correct": 0.96
+  },
+  {
+    "task": "sssp",
+    "n": 128,
+    "family": "diamond",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9921259842519686,
+    "path_node_accuracy": 0.015748031496062964,
+    "full_state_node_accuracy": 0.007874015748031482,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "sssp",
+    "n": 128,
+    "family": "long_detour",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9921259842519686,
+    "path_node_accuracy": 0.9763779527559054,
+    "full_state_node_accuracy": 0.4881889763779527,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "sssp",
+    "n": 128,
+    "family": "sparse",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9988970128733908,
+    "path_node_accuracy": 0.9982670916135483,
+    "full_state_node_accuracy": 0.9903149606299213,
+    "graph_full_state_correct": 0.75
+  },
+  {
+    "task": "sssp",
+    "n": 256,
+    "family": "chain",
+    "unique_graphs": 100,
+    "local_node_accuracy": 1.0,
+    "path_node_accuracy": 1.0,
+    "full_state_node_accuracy": 0.0039215686274509665,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "sssp",
+    "n": 256,
+    "family": "dense",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9999607843137255,
+    "path_node_accuracy": 0.9999607843137255,
+    "full_state_node_accuracy": 0.9998823529411764,
+    "graph_full_state_correct": 0.98
+  },
+  {
+    "task": "sssp",
+    "n": 256,
+    "family": "diamond",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.996078431372549,
+    "path_node_accuracy": 0.007843137254901933,
+    "full_state_node_accuracy": 0.0039215686274509665,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "sssp",
+    "n": 256,
+    "family": "long_detour",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.996078431372549,
+    "path_node_accuracy": 0.9882352941176471,
+    "full_state_node_accuracy": 0.49411764705882355,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "sssp",
+    "n": 256,
+    "family": "sparse",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.999685190101063,
+    "path_node_accuracy": 0.9988607318935168,
+    "full_state_node_accuracy": 0.9975294117647059,
+    "graph_full_state_correct": 0.85
+  },
+  {
+    "task": "sssp",
+    "n": 512,
+    "family": "bridge_value",
+    "unique_graphs": 100,
+    "local_node_accuracy": 1.0,
+    "path_node_accuracy": 1.0,
+    "full_state_node_accuracy": 0.9980430528375734,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "sssp",
+    "n": 512,
+    "family": "chain",
+    "unique_graphs": 100,
+    "local_node_accuracy": 1.0,
+    "path_node_accuracy": 1.0,
+    "full_state_node_accuracy": 0.00195694716242667,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "sssp",
+    "n": 512,
+    "family": "dense",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.999334637964775,
+    "path_node_accuracy": 0.9992172211350294,
+    "full_state_node_accuracy": 0.9989236790606654,
+    "graph_full_state_correct": 0.99
+  },
+  {
+    "task": "sssp",
+    "n": 512,
+    "family": "diamond",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9980430528375734,
+    "path_node_accuracy": 0.003913894324853229,
+    "full_state_node_accuracy": 0.00195694716242667,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "sssp",
+    "n": 512,
+    "family": "long_detour",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9980430528375734,
+    "path_node_accuracy": 0.99412915851272,
+    "full_state_node_accuracy": 0.49706457925636,
+    "graph_full_state_correct": 0.0
+  },
+  {
+    "task": "sssp",
+    "n": 512,
+    "family": "sparse",
+    "unique_graphs": 100,
+    "local_node_accuracy": 0.9998039972526798,
+    "path_node_accuracy": 0.9996862729985138,
+    "full_state_node_accuracy": 0.9982974559686889,
+    "graph_full_state_correct": 0.81
+  }
+]
