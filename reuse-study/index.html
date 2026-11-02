@@ -65,9 +65,16 @@
 <p>512 节点、ε=0.01 的这对输入中，训练到第 35 个 epoch 的快照在 128 步时给出相同安全分；到 256 步时，两种输入的安全分和前驱选择都能区分。页面可切换任务、旧模型、图规模、构造种子、扰动强度和步数。</p>
 <div class="buttons"><a class="button" href="counterfactual/?task=sssp&amp;variant=snapshot35&amp;n=512&amp;steps=128&amp;seed=7531&amp;epsilon=0.01">进入 128 步对照</a><a class="button secondary" href="counterfactual/?task=sssp&amp;variant=snapshot35&amp;n=512&amp;steps=256&amp;seed=7531&amp;epsilon=0.01">切到 256 步</a></div>
 <p class="muted">40 个不同反事实输入对 × 3 个模型版本 × 7 组步数 = 840 次配对运行。这里只记录合流点，不能据此声称整图正确；35-epoch 快照未训练完且没有在本诊断中校准阈值。局部门控的传播限制也不等于全局证书或完整 CopySafe 的限制。</p>
-<p class="muted"><a href="counterfactual/case_data.json">下载分支与实际预测记录</a> · <a href="counterfactual/manifest.json">查看源数据指纹与范围</a></p></div></section>
+<p class="muted"><a href="counterfactual/case_data.json">下载分支与实际预测记录</a> · <a href="counterfactual/manifest.json">查看源数据指纹与范围</a></p>
+<p class="muted">快照训练最多128步、128节点；旧模型最多16步、32节点。256/512步以及更大图属于相应训练范围外的诊断，页面会随所选设置显示提示。</p>
+<details><summary>展开完整配对计数和门控分数图（可下载）</summary>
+<figure class="figure"><a href="assets/paired_merge_predecessors.png"><img src="assets/paired_merge_predecessors.png" width="2880" height="2400" loading="lazy" alt="40个构造反事实输入对的合流点前驱计数：每格4对输入，旧模型即使加步数也未同时选对两种编辑；35-epoch快照在采样步数达到结构距离后为4/4。仅为合流点诊断，非整图结果、非公平新旧模型比较。"></a><figcaption>每格报告实际对数，不把重复模型或轮数当成更多独立输入。虚线分隔采样步数是否已达到局部门控的结构距离；足够远仍不保证旧模型能用好信息。</figcaption></figure>
+<p class="download"><a href="assets/paired_merge_predecessors.pdf">下载计数图 PDF</a><a href="data/paired_merge_predecessors_source.json">查看计数原值</a></p>
+<figure class="figure"><a href="assets/same_old_state_gate_scores.png"><img src="assets/same_old_state_gate_scores.png" width="2880" height="2280" loading="lazy" alt="512节点种子7531的实际安全分：在局部结构依赖距离254步之前两种编辑得分相同；快照到256步出现不同分数。跨结构边界不插值；分数不是正确概率，也不证明整图正确。"></a><figcaption>灰区内的分数相同有架构上的原因。结构边界附近没有逐步采样，因此断开连线，不假定模型在128至256步之间何时开始分清两种编辑。</figcaption></figure>
+<p class="download"><a href="assets/same_old_state_gate_scores.pdf">下载分数图 PDF</a><a href="data/same_old_state_gate_scores_source.json">查看曲线原值</a><a href="data/local_mechanism_figures_manifest.json">图表来源</a></p>
+</details></div></section>
 
 <section id="evidence"><h2>证据与进度</h2><div class="twocol"><div class="surface"><span class="state">已核对的开发证据</span><h3>保留成功，也保留失败</h3><ul><li>旧权重开发结果共 6,480 条记录；128 轮补充诊断另有 648 条记录，沿用 12 个旧输入。</li><li>补充诊断未出现非有限输出；增加轮数没有稳定提高正确率。</li><li>这里的安全分不是正确概率保证；最终无错误复用也可能只是回退取消了复制。</li></ul><p class="muted">旧模型阈值按 8 轮校准。长轮数结果仅作诊断，不能替代匹配训练的新模型实验。</p></div>
 <div class="surface"><span class="state pending">完整正式实验尚未完成</span><h3>完成后更新同一网址</h3><ul><li>5 种主方法与 6 种控制；固定图、扰动和模型种子。</li><li>32–512 节点，多图族、多扰动强度；前缀轮数 8–128，另含远距离竞争路线。</li><li>报告整图正确率、关键误复用、风险漏检、回退修正与包含开销的实际耗时。</li><li>对齐图 ID 与训练种子做配对统计，再发布一页小结和详细报告。</li></ul><p class="muted">正式模型采用共同的逐步 LayerNorm 稳定化版本；与原始模型的区别将在报告中披露。</p></div></div></section>
-<footer><span>发布快照：2026-11-03 02:09 UTC+8 · <a href="evidence.json">页面数据与文件指纹</a></span><span><a href="https://github.com/AndyShan11/Delta-NAR/tree/main/reuse-study">页面源码</a> · 合成图实例</span></footer>
+<footer><span>发布快照：2026-11-03 02:32 UTC+8 · <a href="evidence.json">页面数据与文件指纹</a></span><span><a href="https://github.com/AndyShan11/Delta-NAR/tree/main/reuse-study">页面源码</a> · 合成图实例</span></footer>
 </main></body></html>

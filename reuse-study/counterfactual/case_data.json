@@ -2,6 +2,46 @@
   "stage": "local_counterfactual_mechanism_only",
   "fixture_pairs": 40,
   "paired_runs": 840,
+  "training_limits": {
+    "sssp": {
+      "old100": {
+        "max_steps": 16,
+        "max_n": 32
+      },
+      "old101": {
+        "max_steps": 16,
+        "max_n": 32
+      },
+      "snapshot35": {
+        "max_steps": 128,
+        "max_n": 128
+      }
+    },
+    "bottleneck": {
+      "old100": {
+        "max_steps": 16,
+        "max_n": 32
+      },
+      "old101": {
+        "max_steps": 16,
+        "max_n": 32
+      },
+      "snapshot35": {
+        "max_steps": 128,
+        "max_n": 128
+      }
+    }
+  },
+  "training_config_sha256": {
+    "sssp": {
+      "old": "6958bbb037ffe5d6213c9af45d52ffea3be291a217ac57dc6e933cac6bd7a088",
+      "snapshot35": "234c8956a86985d2c202581815e86e90fac2dd787b5b7e7b0895bb50faf068a5"
+    },
+    "bottleneck": {
+      "old": "3dd6cdd4917afc2957831bd2483b023ecf431253c0887f790590cb74274aa591",
+      "snapshot35": "e046a6bfbb19a7d921b40313a872d4eee9b325f01f2b6c58d1ef8a665dfd6a15"
+    }
+  },
   "new_variant_training_epochs": 35,
   "new_variant_calibrated_threshold_available": false,
   "qualification": "Saved local merge-node diagnostics, not a final50-epoch model or whole-CopySafe evaluation.",

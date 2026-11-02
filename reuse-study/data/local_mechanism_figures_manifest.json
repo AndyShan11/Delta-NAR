@@ -1,0 +1,80 @@
+{
+  "status": "exported_from_visually_reviewed_source",
+  "stage": "local_counterfactual_mechanism_only",
+  "paired_runs": 840,
+  "unique_counterfactual_pairs": 40,
+  "raw_sha256": "e5350b8e393cc808f10a6e779db6ed1c8c600920be2e525c9646c42c73f829ee",
+  "analysis_sha256": "8a39f0a48949c5bdb70bf2d4164977e031cd8fb31e6ac71c8d235eec5bf43ebc",
+  "source_sha256": "78a1d27c6937773bf0fb8f1eaaa30e236260875d8af039b7370024e5bdffd30c",
+  "save_helper_sha256": "e180991caae48e93f949059abdb6a5b47751b3f4f9bad9526492e2b9c13b282e",
+  "new_snapshot_epochs": 35,
+  "formal_model_results": false,
+  "figures": [
+    {
+      "name": "paired_merge_predecessors",
+      "files": [
+        {
+          "file": "../assets/paired_merge_predecessors.png",
+          "sha256": "51c7caef2d320ab677781c33f06db8b24d5dc7d52ada13f9ab78464bc18f9acc"
+        },
+        {
+          "file": "../assets/paired_merge_predecessors.pdf",
+          "sha256": "70ebcb0af34f75df637f5fb087f86d826addd73b7104144d326f068a39b70de9"
+        }
+      ],
+      "source_file": "paired_merge_predecessors_source.json",
+      "source_sha256": "df17f2f61301709205522ad6bde85f6c2efe10251001fe72418221e09eb19a11",
+      "caption": "每格4个构造输入对（2个种子×2档ε）；相同输入跨模型和步数重复使用。虚线右侧T已覆盖端点到合流点的门控结构距离k=(n−4)/2。\n这是所选合流点的前驱诊断，不是整图正确率或总体估计。旧模型与新快照的结构/训练不同，不能当作公平模型胜负比较。\n35-epoch快照未训练完且无校准阈值；256/512步超出其最大训练步数128，旧权重长步数也属外推。完整CopySafe的全局证书不受局部门控距离限制。",
+      "visually_reviewed": true,
+      "source_export_files": [
+        {
+          "file": "paired_merge_predecessors.png",
+          "sha256": "51c7caef2d320ab677781c33f06db8b24d5dc7d52ada13f9ab78464bc18f9acc"
+        },
+        {
+          "file": "paired_merge_predecessors.pdf",
+          "sha256": "70ebcb0af34f75df637f5fb087f86d826addd73b7104144d326f068a39b70de9"
+        },
+        {
+          "file": "paired_merge_predecessors.svg",
+          "sha256": "badb85046b3b4b630db2ee33f9e79ed955972cfa6f873384a232517bf527e924"
+        }
+      ],
+      "source_export_sha256": "e95ede94d25e21f1a9931ee8e71fc07479e1c88b42918a4e4b86030e14a50847"
+    },
+    {
+      "name": "same_old_state_gate_scores",
+      "files": [
+        {
+          "file": "../assets/same_old_state_gate_scores.png",
+          "sha256": "4bcd6fc0f568c5911e6e06f6ad164e730af8b6d111f3d11a43f5d79a0840475d"
+        },
+        {
+          "file": "../assets/same_old_state_gate_scores.pdf",
+          "sha256": "7134f3a1e65715b29537a9ef16c5f262a6a384f67514a0eaeb72f9015eee8b66"
+        }
+      ],
+      "source_file": "same_old_state_gate_scores_source.json",
+      "source_sha256": "abf6c9dc96445cd8837e923e67e577296305bc52fa95b0ad41e89aa7a25cc712",
+      "caption": "每个任务仅展示1个反事实构造对：n=512、种子7531、ε=0.01；完整840次配对运行另有逐项审计和交互页。两种编辑共享完全相同的旧图和旧答案。\n点为实际保存的局部门控分数；跨结构边界不插值，断线处没有采样。灰区不是实测激活；分数不是正确概率；35-epoch快照无校准阈值。\n256/512步超出快照最大训练步数128，旧权重长步数也属外推。此图不估计总体发生率，也不证明整图正确或完整CopySafe失效。",
+      "visually_reviewed": true,
+      "source_export_files": [
+        {
+          "file": "same_old_state_gate_scores.png",
+          "sha256": "4bcd6fc0f568c5911e6e06f6ad164e730af8b6d111f3d11a43f5d79a0840475d"
+        },
+        {
+          "file": "same_old_state_gate_scores.pdf",
+          "sha256": "7134f3a1e65715b29537a9ef16c5f262a6a384f67514a0eaeb72f9015eee8b66"
+        },
+        {
+          "file": "same_old_state_gate_scores.svg",
+          "sha256": "b45cd959d6e97b17b22fd811d853f414214a2f103219ee56e53d5a397609f7f8"
+        }
+      ],
+      "source_export_sha256": "066cee8361127fd7ff70063cfa54beb36f0c9c7b5324d5c7f61225f3cf77ce27"
+    }
+  ],
+  "visual_review": "Both exported PNGs inspected: all6panels/captions visible; score traces do not interpolate across structural boundary; nonformal and extrapolation limitations explicit.",
+  "source_export_manifest_sha256": "fd1681cb39333a84f127d50189f729deee515e5e57f4e596063663e22df0999b"
+}

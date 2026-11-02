@@ -5,20 +5,20 @@
   "paired_runs": 840,
   "source_raw_sha256": "e5350b8e393cc808f10a6e779db6ed1c8c600920be2e525c9646c42c73f829ee",
   "audited_analysis_sha256": "8a39f0a48949c5bdb70bf2d4164977e031cd8fb31e6ac71c8d235eec5bf43ebc",
-  "builder_sha256": "db80a43287522fdf209df38ed604097264a622c6be15b890513231d47a4c478a",
-  "template_sha256": "3a00d6651785f3c99bac04405721bafef590181fd500c8d00bd4a98cba260315",
+  "builder_sha256": "1696a94a0eaacbbad7b06f8dcfee9446fb206ee53d652d7e6e611a64b0715e7a",
+  "template_sha256": "159714d63df56b521ccb205952ce0344f11aaa7314cab8cc12f37310fbbbb7ae",
   "files": {
-    "index.html": "09c19b1fcb37301fadb8fddeebb6cf22a865daf1eef1255a5fba4ecf9965739b",
-    "case_data.json": "d4444a19a2dedd50f98adb22e45698ccffea4f175a7d5db623fd99170d7b1341"
+    "index.html": "c62ab6a2766dd2d51702df36af84687ba37a661c3c1bc94dcc83c84686234ab8",
+    "case_data.json": "bc6768f18465aa886c59b3a789702f2d04138bbdf917af7b64f5afde63f0667a"
   },
   "collapse": "Each branch retains first/last vertex IDs and original vertex/edge counts; full IDs in source JSON.",
   "qualification": "Saved local merge-node diagnostics, not a final50-epoch model or whole-CopySafe evaluation.",
-  "browser_review_sha256": "e45e26937430dfb3312df6f13744f7dddb1551fa5f85ec5492944f0f6a417b93",
-  "reviewed_controls": 6,
-  "source_export_manifest_sha256": "40ec4cf6df0967a44743b84871e891a6e69954c573db51cbc2a1d9bb572602d2",
+  "browser_review_sha256": "60cbf15222280619e830d75f4abc45c3be8205df4f3afe446df0632e47c5a75b",
+  "prior_functional_review_sha256": "e45e26937430dfb3312df6f13744f7dddb1551fa5f85ec5492944f0f6a417b93",
+  "source_export_manifest_sha256": "15eab050da455987f40496ffc66e42bc2e7719e8d6a5948be6194a27c9f02012",
   "source_files": {
-    "index.html": "426621363e70b628d8c01a386f065097d44639dbbce2c0e5973d0b487eb90249",
-    "case_data.json": "d4444a19a2dedd50f98adb22e45698ccffea4f175a7d5db623fd99170d7b1341"
+    "index.html": "fb932590f4d2b83e6dfc1bce1cf8b21564726b8dfe0c67c3392f33d0f4d4d205",
+    "case_data.json": "bc6768f18465aa886c59b3a789702f2d04138bbdf917af7b64f5afde63f0667a"
   },
   "public_navigation_added": true
 }
