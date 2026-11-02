@@ -1,0 +1,218 @@
+{
+  "stage": "old_weight_single_input_timing_diagnostic",
+  "rows": [
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "11421107858d6e175f0d15c41dbb42ffa0de56fa31c00c72c14f09f33177aaec",
+        8,
+        "recompute_total"
+      ],
+      "task": "bottleneck",
+      "seed": 100,
+      "sample_id": "11421107858d6e175f0d15c41dbb42ffa0de56fa31c00c72c14f09f33177aaec",
+      "n": 128,
+      "prefix_rounds": 8,
+      "method": "recompute_total",
+      "views": [
+        "few_critical_errors"
+      ],
+      "actual_rounds": 16,
+      "fallback": false,
+      "continued": false,
+      "copied_nodes": 0,
+      "graph_correct": false,
+      "observer_total_ms": 16.840899996168446,
+      "pack_transfer_ms": 1.106900002923794,
+      "encode_ms": 0.8068000024650246,
+      "propagation_ms": 12.437199999112636,
+      "decode_ms": 1.387300006172154,
+      "postprocess_transfer_ms": 0.7401999973808415,
+      "global_path_reach_ms": 0.13819999730912969,
+      "certificate_exclusive_ms": 0.0,
+      "explicit_copies_ms": 0.0,
+      "other_observer_ms": 0.22429999080486596,
+      "exact_cpu_ms": 0.0,
+      "original_repeats_ms": [
+        16.049800004111603,
+        16.795000003185123,
+        16.172900002857205
+      ],
+      "original_median_ms": 16.172900002857205,
+      "observed_detector_field_ms": 0.0,
+      "explicit_copy_payload_bytes": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "11421107858d6e175f0d15c41dbb42ffa0de56fa31c00c72c14f09f33177aaec",
+        8,
+        "pure_copy"
+      ],
+      "task": "bottleneck",
+      "seed": 100,
+      "sample_id": "11421107858d6e175f0d15c41dbb42ffa0de56fa31c00c72c14f09f33177aaec",
+      "n": 128,
+      "prefix_rounds": 8,
+      "method": "pure_copy",
+      "views": [
+        "few_critical_errors"
+      ],
+      "actual_rounds": 0,
+      "fallback": false,
+      "continued": false,
+      "copied_nodes": 127,
+      "graph_correct": false,
+      "observer_total_ms": 0.9362999990116805,
+      "pack_transfer_ms": 0.0,
+      "encode_ms": 0.0,
+      "propagation_ms": 0.0,
+      "decode_ms": 0.0,
+      "postprocess_transfer_ms": 0.0,
+      "global_path_reach_ms": 0.0,
+      "certificate_exclusive_ms": 0.0,
+      "explicit_copies_ms": 0.07029999687802047,
+      "other_observer_ms": 0.86600000213366,
+      "exact_cpu_ms": 0.0,
+      "original_repeats_ms": [
+        0.08850000449456275,
+        0.05989999772282317,
+        0.0866999980644323
+      ],
+      "original_median_ms": 0.0866999980644323,
+      "observed_detector_field_ms": 0.0,
+      "explicit_copy_payload_bytes": 2176
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "11421107858d6e175f0d15c41dbb42ffa0de56fa31c00c72c14f09f33177aaec",
+        8,
+        "repair_total"
+      ],
+      "task": "bottleneck",
+      "seed": 100,
+      "sample_id": "11421107858d6e175f0d15c41dbb42ffa0de56fa31c00c72c14f09f33177aaec",
+      "n": 128,
+      "prefix_rounds": 8,
+      "method": "repair_total",
+      "views": [
+        "few_critical_errors"
+      ],
+      "actual_rounds": 16,
+      "fallback": false,
+      "continued": false,
+      "copied_nodes": 0,
+      "graph_correct": true,
+      "observer_total_ms": 15.93950000096811,
+      "pack_transfer_ms": 0.9843000007094815,
+      "encode_ms": 0.4215000008116476,
+      "propagation_ms": 12.215399998240173,
+      "decode_ms": 1.2716000055661425,
+      "postprocess_transfer_ms": 0.7365999990724958,
+      "global_path_reach_ms": 0.13999999646330252,
+      "certificate_exclusive_ms": 0.0,
+      "explicit_copies_ms": 0.0,
+      "other_observer_ms": 0.17010000010486692,
+      "exact_cpu_ms": 0.0,
+      "original_repeats_ms": [
+        19.649100002425257,
+        15.384300000732765,
+        15.401999997266103
+      ],
+      "original_median_ms": 15.401999997266103,
+      "observed_detector_field_ms": 0.0,
+      "explicit_copy_payload_bytes": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "11421107858d6e175f0d15c41dbb42ffa0de56fa31c00c72c14f09f33177aaec",
+        8,
+        "copysafe"
+      ],
+      "task": "bottleneck",
+      "seed": 100,
+      "sample_id": "11421107858d6e175f0d15c41dbb42ffa0de56fa31c00c72c14f09f33177aaec",
+      "n": 128,
+      "prefix_rounds": 8,
+      "method": "copysafe",
+      "views": [
+        "few_critical_errors"
+      ],
+      "actual_rounds": 8,
+      "fallback": false,
+      "continued": false,
+      "copied_nodes": 126,
+      "graph_correct": true,
+      "observer_total_ms": 21.363300002121832,
+      "pack_transfer_ms": 2.779399997962173,
+      "encode_ms": 0.8464999991701916,
+      "propagation_ms": 8.628399998997338,
+      "decode_ms": 2.671599999302998,
+      "postprocess_transfer_ms": 1.8305000048712827,
+      "global_path_reach_ms": 2.016300000832416,
+      "certificate_exclusive_ms": 1.895699999295175,
+      "explicit_copies_ms": 0.13049998960923404,
+      "other_observer_ms": 0.5644000120810233,
+      "exact_cpu_ms": 0.0,
+      "original_repeats_ms": [
+        12.759400000504684,
+        15.964500002155546,
+        19.270199998572934
+      ],
+      "original_median_ms": 15.964500002155546,
+      "observed_detector_field_ms": 2.8231999967829324,
+      "explicit_copy_payload_bytes": 4192
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "11421107858d6e175f0d15c41dbb42ffa0de56fa31c00c72c14f09f33177aaec",
+        8,
+        "continue"
+      ],
+      "task": "bottleneck",
+      "seed": 100,
+      "sample_id": "11421107858d6e175f0d15c41dbb42ffa0de56fa31c00c72c14f09f33177aaec",
+      "n": 128,
+      "prefix_rounds": 8,
+      "method": "continue",
+      "views": [
+        "few_critical_errors"
+      ],
+      "actual_rounds": 16,
+      "fallback": false,
+      "continued": true,
+      "copied_nodes": 0,
+      "graph_correct": true,
+      "observer_total_ms": 26.692300001741387,
+      "pack_transfer_ms": 1.6088999982457608,
+      "encode_ms": 0.8350999996764585,
+      "propagation_ms": 16.996299993479624,
+      "decode_ms": 2.3471000022254884,
+      "postprocess_transfer_ms": 2.210099992225878,
+      "global_path_reach_ms": 1.2188000036985613,
+      "certificate_exclusive_ms": 1.1429000078351237,
+      "explicit_copies_ms": 0.030099996365606785,
+      "other_observer_ms": 0.30300000798888505,
+      "exact_cpu_ms": 0.0,
+      "original_repeats_ms": [
+        19.668200002342928,
+        21.83869999862509,
+        21.5812000024016
+      ],
+      "original_median_ms": 21.5812000024016,
+      "observed_detector_field_ms": 1.6071999998530373,
+      "explicit_copy_payload_bytes": 4192
+    }
+  ],
+  "replicates": "One observer run plus3separate original runs per method; fixed order; not independent graphs.",
+  "decomposition_receipt_sha256": "29b90d180fb9e642f538dcc7f410b5be440cbbbf215ad5d49bd1fac3bd57c079",
+  "plot_source_sha256": "2426eed33d7ee17f43fd34d11dfcb273ec7f4f9a4a8116b13a4233b70d193930"
+}

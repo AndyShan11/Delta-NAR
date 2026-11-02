@@ -1,0 +1,71 @@
+{
+  "status": "visually_reviewed",
+  "new_formal_results": false,
+  "unique_inputs": 1,
+  "methods": 5,
+  "raw_rows_behind_analysis": 77,
+  "source_sha256": "2426eed33d7ee17f43fd34d11dfcb273ec7f4f9a4a8116b13a4233b70d193930",
+  "analysis_sha256": "29b90d180fb9e642f538dcc7f410b5be440cbbbf215ad5d49bd1fac3bd57c079",
+  "files": {
+    "timing_stages_and_raw_repeats.png": "08d4825ac6ecfd55efd193a52ebe74e051cb3d5191f974232113a0836d9b2841",
+    "timing_stages_and_raw_repeats.svg": "658671d5dbb408522d6d5d6c8e89f4d070864b5db59d2dada03c933fb0333fff",
+    "figure_source.json": "8ceed083472cd06c2865ddf9e6e14fc38fa52cdeb2cd9b2cba06122a67cf944a"
+  },
+  "visually_reviewed": true,
+  "reviewed_at_utc": "2026-11-02T22:51:54.435652+00:00",
+  "visual_checks": [
+    "legible at report size",
+    "same zero-based time axis",
+    "all raw repeats shown",
+    "median labels explicit",
+    "no clipping or overlap",
+    "phase bounds and limits disclosed"
+  ],
+  "source_export_files": {
+    "timing_stages_and_raw_repeats.png": "08d4825ac6ecfd55efd193a52ebe74e051cb3d5191f974232113a0836d9b2841",
+    "timing_stages_and_raw_repeats.svg": "09ea4b82b9b71b290bc3dcf54e15e0f55167446aa5b7934d398b898c20d020e2",
+    "figure_source.json": "8ceed083472cd06c2865ddf9e6e14fc38fa52cdeb2cd9b2cba06122a67cf944a"
+  },
+  "source_export_manifest_sha256": "c2a38d645574abe3e9eb3f7b9edd1c479deb9967d6e969eebcfcec36105104a7",
+  "text_export_line_endings": "LF",
+  "independent_timer_audit": {
+    "status": "PASS",
+    "verified_at_utc": "2026-11-02T22:51:55.131387+00:00",
+    "actual_saved_policy_runs": 77,
+    "nested_timer_events_checked": 1050,
+    "all_parent_child_exclusive_sums_close": true,
+    "all_observed_wall_sums_close": true,
+    "all_three_raw_repeats_preserved": true,
+    "all_displayed_timings_match": true,
+    "learned_gate_cost_not_detector_field": true,
+    "postprocess_not_pure_cpu": true,
+    "explicit_copies_not_all_memory_traffic": true,
+    "new_formal_results": false,
+    "new_neural_inferences": 0,
+    "analysis_sha256": "29b90d180fb9e642f538dcc7f410b5be440cbbbf215ad5d49bd1fac3bd57c079",
+    "figure_manifest_sha256": "c2a38d645574abe3e9eb3f7b9edd1c479deb9967d6e969eebcfcec36105104a7",
+    "verifier_sha256": "225a961ce1d955b82cbcbf5d81a4f2000b360c1d477b53efb77f4c3c35d3329c"
+  },
+  "formal_timer_contract": {
+    "file": "formal_eval.py",
+    "sha256": "29cfcaf6e40a36cbb082ef95571c43f15f44c132f0ac825a03e60188360edd83",
+    "repeat_loop_lines": [
+      141,
+      144
+    ],
+    "statements": [
+      "sync('cuda')",
+      "start = time.perf_counter()",
+      "p, extra = policy(method, s, a.task, models, r, thresholds[r], 'cuda')",
+      "sync('cuda')",
+      "times.append(time.perf_counter() - start)",
+      "outputs.append((p, extra))"
+    ],
+    "three_repeats": true,
+    "pre_start_cuda_fence": true,
+    "post_policy_cuda_fence_inside_timer": true,
+    "scoring_outside_timer": true,
+    "load_and_calibration_before_timer": true,
+    "interpretation": "Wall time encloses one complete policy plus its trailing CUDA fence. The preceding fence is excluded. PureCPU policies also pay the trailing fence call; do not remove it post hoc."
+  }
+}
