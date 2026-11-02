@@ -1,0 +1,20 @@
+{
+  "stage": "old_model_development_only",
+  "published_snapshot": "2026-11-02T23:01:26.321251+08:00",
+  "public_inputs": "Synthetic graph cases and saved predictions only.",
+  "case_views": 7,
+  "unique_graph_inputs": 5,
+  "final_matched_model_results_complete": false,
+  "formal_report_available": false,
+  "files": {
+    "index.html": "97ba9bbbba4bdffce500c9c54a5544922134c4ec352c26e81dac852cabd7897f",
+    "cases/index.html": "23fbeabaa68141593349c5ae68dafd438f15184c501cb7b3fa4c8c3c2e55937b",
+    "cases/case_data.json": "10a8cd80429cfcdeb8e8d27db2bfceeac921066c6145641fd0bfd267a285b114",
+    "assets/tiny_route_case.png": "c3b850358287d9375488936e8a68085f16e3e3ab6257a1d94ffd649bff4b517a",
+    "assets/tiny_route_case.pdf": "160b10e2e85b05f50694bba4950b408b870471bf2271c88eb951b624c3ebe82b",
+    "assets/tiny_route_case.svg": "d84cec9bc51b63c9c58fc6310a3628f0be8fe42499fb0f9eddb49cc621fdf0b9"
+  },
+  "selection_data_sha256": "f0fc9b02710b0e85fb69a708146a8c99cd7950d2fbe6771c1782cdcc7117f41a",
+  "builder_source_sha256": "97a9cdca08e81b709f853345b371400f6d1c2f35183734b8f29ee3933efc05fc",
+  "interpretation": "Illustrative best/worst cases, not a prevalence estimate. The full study remains in progress."
+}

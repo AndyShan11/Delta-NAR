@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="NAR 图更新实验：相同输入下比较重算、复用、修复、CopySafe 与检查后续算，逐节点查看微扰、错误复用与回退。当前为旧模型开发案例。">
+<title>NAR 图更新实验 · 可视化</title>
+<style>
+:root{--ink:#172f40;--muted:#4f6574;--line:#dbe4ec;--blue:#165e96;--green:#006b57;--amber:#965000}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5f8fb;color:var(--ink);font:16px/1.7 system-ui,-apple-system,"Microsoft YaHei",sans-serif}a{color:var(--blue);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}a:focus-visible,summary:focus-visible{outline:3px solid #165e96;outline-offset:4px}header{background:white;border-bottom:1px solid var(--line)}nav{max-width:1160px;margin:auto;padding:15px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}nav strong{font-size:17px}nav div{display:flex;gap:23px;font-size:14px}main{max-width:1160px;margin:auto;padding:42px 24px 60px}h1{font-size:clamp(29px,4vw,46px);line-height:1.25;letter-spacing:-.02em;margin:16px 0}h2{font-size:24px;line-height:1.4;margin:0 0 17px}h3{font-size:19px;margin:8px 0}p{margin:10px 0}section{scroll-margin-top:22px;margin-top:42px}.eyebrow{font-size:12px;letter-spacing:.15em;color:var(--blue);font-weight:750}.subtitle{max-width:810px;color:var(--muted);font-size:18px}.badge{display:inline-block;border:1px solid #d9aa69;background:#fff3df;color:#713b00;padding:4px 10px;border-radius:5px;font-weight:650;font-size:13px}.buttons{display:flex;gap:13px;flex-wrap:wrap;margin-top:23px}.button{display:inline-block;background:var(--blue);color:white;text-decoration:none;padding:10px 18px;border-radius:6px;font-weight:650}.button.secondary{background:white;color:var(--blue);border:1px solid #b5cad9}.notice{margin-top:25px;border-left:4px solid #a45a00;background:#fff3df;color:#633800;padding:15px 18px}.notice p{margin:0}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card,.surface{background:white;border:1px solid var(--line);border-radius:10px;padding:22px}.card{display:flex;flex-direction:column}.card p{color:var(--muted);font-size:15px}.card a{margin-top:auto;align-self:start;font-weight:650}.card .type{font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--blue)}.metric{font-size:32px;line-height:1.3;font-weight:750;color:var(--ink);font-variant-numeric:tabular-nums;margin:8px 0}.muted{color:var(--muted);font-size:14px}.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;background:white;font-size:15px}th,td{padding:13px 15px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}th{background:#edf3f8;font-size:14px}tbody tr:last-child td{border-bottom:0}td:first-child{font-weight:650;white-space:nowrap}.tablewrap{border:1px solid var(--line);border-radius:9px}.figure{margin:0}.figure img{display:block;width:100%;height:auto;border-radius:6px}.figure figcaption{margin-top:10px;color:var(--muted);font-size:14px}.twocol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.state{font-size:12px;font-weight:700;color:var(--green);padding:3px 8px;border:1px solid #a1c3b9;border-radius:4px;display:inline-block}.state.pending{color:#7e4a00;border-color:#d5b384}ul{padding-left:21px;margin:10px 0}li{margin:7px 0}details{margin-top:15px}summary{cursor:pointer;font-weight:650}footer{border-top:1px solid var(--line);padding-top:20px;margin-top:40px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.download{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}code{background:#edf3f8;padding:2px 5px;border-radius:3px;font-size:13px}@media(max-width:850px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:580px){main{padding:25px 16px 40px}nav{padding:13px 16px}nav div{gap:15px}.cards,.twocol{grid-template-columns:1fr}.surface,.card{padding:18px}h2{font-size:22px}th,td{padding:10px}.subtitle{font-size:16px}}
+</style></head><body>
+<header><nav aria-label="主要导航"><strong>NAR · 图更新实验</strong><div><a href="#cases">具体案例</a><a href="#methods">五种方法</a><a href="#evidence">证据与进度</a><a href="https://github.com/AndyShan11/Delta-NAR">GitHub</a></div></nav></header>
+<main><div class="eyebrow">GRAPH UPDATES · REUSE · VERIFICATION</div><h1>小改动，整图答案可能改变</h1>
+<p class="subtitle">观察少数关键节点如何影响整图结果，并区分学习门控、整图检查和回退重算各自起了什么作用。</p>
+<span class="badge">旧模型开发案例 · 正式实验进行中</span>
+<div class="buttons"><a class="button" href="cases/?case=tiny_global_route&amp;node=22">进入逐节点交互</a><a class="button secondary" href="#methods">看五种方法的区别</a></div>
+<div class="notice"><p><strong>当前展示的是已核对的旧模型案例。</strong>它们解释机制，不代表新模型的总体效果。正式对照表、置信区间和最终报告会在完整评测后更新。此页为发布快照，非实时训练监控。</p></div>
+
+<section id="cases"><h2>从具体错误看清机制</h2><div class="cards">
+<article class="card"><span class="type">微扰改变路线</span><div class="metric">5 → 4.99</div><h3>一条边，改变最优瓶颈路径</h3><p>旧路线为 0→10→22，新路线切换为 0→18→22。这里的变化量只有 0.01。</p><a href="cases/?case=tiny_global_route&amp;node=22">查看旧、新路径 →</a></article>
+<article class="card"><span class="type">节点平均与整图答案</span><div class="metric">97.64%</div><h3>绝大多数节点对，整图仍错</h3><p>128 节点的实例中，3 个非源点的旧完整状态失效。全部复用时，节点正确率较高，整图仍然错误。</p><a href="cases/?case=few_critical_errors&amp;method=pure_copy">定位少量关键错误 →</a></article>
+<article class="card"><span class="type">漏检与兜底</span><div class="metric">29 / 30</div><h3>门控漏检，回退才修正</h3><p>微扰换路的实例中，学习门控漏掉这些关键节点。整图检查拒绝了混合答案，回退后才恢复正确。</p><a href="cases/?case=tiny_global_route&amp;method=copysafe&amp;node=22">追踪漏检、检查与回退 →</a></article>
+<article class="card"><span class="type">识别成功的观察角度</span><h3>也检查门控覆盖了风险的例子</h3><p>展示关键节点、风险判断、复用覆盖和最终答案。单个成功实例不表示总体识别率为 100%。</p><a href="cases/?case=learned_risk_detected">查看风险判断 →</a></article>
+<article class="card"><span class="type">失败必须保留</span><h3>触发回退，答案依然可能错</h3><p>回退网络的新预测也会出错。最终错误复用为零，不能证明整图解正确。</p><a href="cases/?case=fallback_failed">查看回退后的失败 →</a></article>
+<article class="card"><span class="type">第五种方法</span><h3>检查通过后，续算反而出错</h3><p>先前正确的答案继续计算 8 轮后变错。增加计算可能改善答案，也可能破坏已经正确的输出。</p><a href="cases/?case=accepted_then_regressed&amp;method=continue">对比停止与续算 →</a></article>
+</div><p class="muted">交互页包含 7 个观察角度，来自 5 个独立输入；同一输入的多个观察角度不增加样本数。可切换方法、选中节点、查看安全分、复制标记和路径。</p></section>
+
+<section aria-labelledby="route-title"><h2 id="route-title">把一次换路完整展开</h2><div class="surface"><figure class="figure"><a href="assets/tiny_route_case.png"><img src="assets/tiny_route_case.png" width="2760" height="1968" loading="lazy" alt="同一32节点瓶颈图的四个阶段：编辑前走0到10到22；边权5降到4.99后正确路线改走0到18到22；学习门控错误复用29个关键旧状态；整图检查拒绝并回退后修正。28个原始尾链节点被明确折叠展示。"></a><figcaption>相同图、相同修改、相同布局。尾链按原始结构折叠并标明节点数。旧权重案例，仅解释机制。</figcaption></figure><div class="download"><a href="assets/tiny_route_case.pdf">下载矢量 PDF</a><a href="assets/tiny_route_case.svg">下载 SVG</a><a href="cases/case_data.json">下载交互案例原值</a></div></div></section>
+
+<section id="methods"><h2>五种方法放在同一输入上比较</h2><p class="muted">R 是第一阶段的消息传播轮数；主实验 R=8 时，总轮数上限为 16。长轮数实验会同时报告实际轮数、网络调用次数和完整耗时。</p>
+<div class="tablewrap"><table><thead><tr><th scope="col">方法</th><th scope="col">做什么</th><th scope="col">神经计算轮数</th></tr></thead><tbody>
+<tr><td>完整重算</td><td>从修改后的图开始，由重算网络重新求解。</td><td>R+8</td></tr>
+<tr><td>全部复用</td><td>直接使用旧前驱和旧数值。</td><td>0</td></tr>
+<tr><td>Repair-only</td><td>修复网络参考旧答案和修改信息，产生新答案。</td><td>R+8</td></tr>
+<tr><td>CopySafe</td><td>先算 R 轮，门控混合旧、新输出；整图检查通过则停止，否则独立重算 8 轮。</td><td>通过 R；拒绝 R+8</td></tr>
+<tr><td>检查通过后续算</td><td>检查通过也不停，从同一隐藏状态继续 8 轮；检查拒绝则走独立重算 8 轮。</td><td>R+8</td></tr>
+</tbody></table></div><details class="surface"><summary>如何保证比较公平，哪些计算不是免费的？</summary><ul>
+<li>所有方法使用同一批图、同一次修改、同一份旧缓存。另设相同前缀轮数、相同总轮数、仅门控、仅检查等控制。</li>
+<li>当前 Repair-only 仍计算整张图；软门控并不跳过安全节点的 MLP。相同轮数也不等于相同 FLOPs 或耗时。</li>
+<li>计时包括打包、传输、解码、内存缓存读写、判断、回退和续算。已有旧缓存的创建、训练和离线评分另计。</li>
+<li>统一路径解码与整图检查涉及 CPU 工作。唯一长链上的成功不能单独证明神经网络学会了远距离传播。</li>
+<li>“关键节点”由编辑后的精确答案离线判断：旧路径或旧数值在该节点失效。精确答案不提供给运行时门控。</li>
+</ul></details></section>
+
+<section id="evidence"><h2>证据与进度</h2><div class="twocol"><div class="surface"><span class="state">已核对的开发证据</span><h3>保留成功，也保留失败</h3><ul><li>旧权重开发结果共 6,480 条记录；128 轮补充诊断另有 648 条记录，沿用 12 个旧输入。</li><li>补充诊断未出现非有限输出；增加轮数没有稳定提高正确率。</li><li>这里的安全分不是正确概率保证；最终无错误复用也可能只是回退取消了复制。</li></ul><p class="muted">旧模型阈值按 8 轮校准。长轮数结果仅作诊断，不能替代匹配训练的新模型实验。</p></div>
+<div class="surface"><span class="state pending">完整正式实验尚未完成</span><h3>完成后更新同一网址</h3><ul><li>5 种主方法与 6 种控制；固定图、扰动和模型种子。</li><li>32–512 节点，多图族、多扰动强度；前缀轮数 8–128，另含远距离竞争路线。</li><li>报告整图正确率、关键误复用、风险漏检、回退修正与包含开销的实际耗时。</li><li>对齐图 ID 与训练种子做配对统计，再发布一页小结和详细报告。</li></ul><p class="muted">正式模型采用共同的逐步 LayerNorm 稳定化版本；与原始模型的区别将在报告中披露。</p></div></div></section>
+<footer><span>发布快照：2026-11-02 23:01 UTC+8 · <a href="evidence.json">页面数据与文件指纹</a></span><span><a href="https://github.com/AndyShan11/Delta-NAR/tree/main/reuse-study">页面源码</a> · 合成图实例</span></footer>
+</main></body></html>
