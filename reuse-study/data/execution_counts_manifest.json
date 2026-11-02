@@ -1,0 +1,78 @@
+{
+  "status": "exported_from_visually_reviewed_source",
+  "stage": "old_weight_execution_counts_only",
+  "analysis_sha256": "ec7961f1214c6ee6ad64908a4c4cd1617475a4bcf33927799afc23f389b9eed6",
+  "source_sha256": "417244364a5888b7125dc64d6f9ae0b3eab044e43374b1e7af1efeb7a25598a5",
+  "rows": 77,
+  "contexts": 7,
+  "unique_inputs": 6,
+  "new_formal_performance": false,
+  "figures": [
+    {
+      "name": "same_rounds_different_linear_work",
+      "files": [
+        {
+          "file": "../assets/same_rounds_different_linear_work.png",
+          "sha256": "9c71783070f701bb739d61cbb80ab39dcd5dbba505fede17bb21d1d30726b77b"
+        },
+        {
+          "file": "../assets/same_rounds_different_linear_work.pdf",
+          "sha256": "0e91521e4a3971f80a7054c7e6e40f166c39839523a4081f43a2b732cd5c7336"
+        }
+      ],
+      "source_file": "same_rounds_different_linear_work_source.json",
+      "source_sha256": "5a8cef7591c07a574d5887efff5e50a147b2bbbee250dba4aebe90873fa26743",
+      "caption": "每个面板内：同一旧权重seed100、同一32节点瓶颈图、同一编辑、R=8。面板之间是不同输入，只作机制说明。\nMAC由实际Linear调用/张量形状计数，并独立用闭式公式核对；不含非线性、聚合、CPU、缓存或证书成本，不能当作实际耗时。\n续算通过后需再次解码；回退需额外编码/解码。全部复用的0 MAC仅表示零神经线性计算，CPU工作不为零。",
+      "visually_reviewed": true,
+      "source_export_files": [
+        {
+          "file": "same_rounds_different_linear_work.png",
+          "sha256": "9c71783070f701bb739d61cbb80ab39dcd5dbba505fede17bb21d1d30726b77b"
+        },
+        {
+          "file": "same_rounds_different_linear_work.pdf",
+          "sha256": "0e91521e4a3971f80a7054c7e6e40f166c39839523a4081f43a2b732cd5c7336"
+        },
+        {
+          "file": "same_rounds_different_linear_work.svg",
+          "sha256": "8857f73eadaf03519233c86093cac7c3c7095650bc2c43e0e2b4a2ac780b397c"
+        }
+      ],
+      "source_export_sha256": "5a8cef7591c07a574d5887efff5e50a147b2bbbee250dba4aebe90873fa26743"
+    },
+    {
+      "name": "dense_messages_on_sparse_graphs",
+      "files": [
+        {
+          "file": "../assets/dense_messages_on_sparse_graphs.png",
+          "sha256": "07a38d23fccc8c23924921cf11a4a502f9a9cfe217f8225176e7fd8335f28668"
+        },
+        {
+          "file": "../assets/dense_messages_on_sparse_graphs.pdf",
+          "sha256": "764375ba2deb1528d8e0c193dc66758c900e3cedb1d4b01503a38474700c8f0c"
+        }
+      ],
+      "source_file": "dense_messages_on_sparse_graphs_source.json",
+      "source_sha256": "f083790fbb1b99b350e50c53cfba140dabbff13f44c2bbb57faceb6abcae8a28",
+      "caption": "6张不同合成输入，跨32/64/128/512节点；同一输入的不同前缀/方法未当作更多图。部分点重合，未人为抖动。\n张量形状显示先在全部n²节点对上执行消息MLP，再应用边掩码；更新MLP也覆盖当前每一步的全部n个节点。\n这是当前实现的计算路径证据，不是稀疏实现的实测加速比，也不是总体性能比较。",
+      "visually_reviewed": true,
+      "source_export_files": [
+        {
+          "file": "dense_messages_on_sparse_graphs.png",
+          "sha256": "07a38d23fccc8c23924921cf11a4a502f9a9cfe217f8225176e7fd8335f28668"
+        },
+        {
+          "file": "dense_messages_on_sparse_graphs.pdf",
+          "sha256": "764375ba2deb1528d8e0c193dc66758c900e3cedb1d4b01503a38474700c8f0c"
+        },
+        {
+          "file": "dense_messages_on_sparse_graphs.svg",
+          "sha256": "fba2ed27479b3fc58d68df4eb456c5a9a6dac798aec41a279d7bbe6448622794"
+        }
+      ],
+      "source_export_sha256": "f083790fbb1b99b350e50c53cfba140dabbff13f44c2bbb57faceb6abcae8a28"
+    }
+  ],
+  "review": "BothPNGfiguresopened; consistentaxes/actualrounds/copycounts; no fabricated zero-heightbars; MAC/latency and sparse-speed limitations explicit.",
+  "source_export_manifest_sha256": "6d47faad7f761c925dadd44e5a38ad5327ba93e883d4c6a1bb1a4363190c9282"
+}

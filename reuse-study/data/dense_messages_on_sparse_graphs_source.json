@@ -1,0 +1,54 @@
+{
+  "stage": "old_weight_execution_counts_only",
+  "data": [
+    {
+      "task": "bottleneck",
+      "sample_id": "054a27ee6250f37e69360f8155d9051988944136ffab4879915d7cc0d5393743",
+      "n": 32,
+      "actual_graph_edges": 31,
+      "per_step_dense_pair_rows": 1024,
+      "all_pairs_over_edges": 33.03225806451613
+    },
+    {
+      "task": "bottleneck",
+      "sample_id": "192ebd4b1e4e364e9815095e62f330869f0926f62eb5c1e39e82f85ec4bfff07",
+      "n": 32,
+      "actual_graph_edges": 166,
+      "per_step_dense_pair_rows": 1024,
+      "all_pairs_over_edges": 6.168674698795181
+    },
+    {
+      "task": "bottleneck",
+      "sample_id": "b5008363a7c84a040079dbae00d4469d82a55b4ba53522147b330d0d74b4275d",
+      "n": 32,
+      "actual_graph_edges": 32,
+      "per_step_dense_pair_rows": 1024,
+      "all_pairs_over_edges": 32.0
+    },
+    {
+      "task": "bottleneck",
+      "sample_id": "11421107858d6e175f0d15c41dbb42ffa0de56fa31c00c72c14f09f33177aaec",
+      "n": 128,
+      "actual_graph_edges": 774,
+      "per_step_dense_pair_rows": 16384,
+      "all_pairs_over_edges": 21.16795865633075
+    },
+    {
+      "task": "bottleneck",
+      "sample_id": "4124df6ed8d24d1b187392e1b9b62f89867d596dbbf5633b66d89c70dfd139a2",
+      "n": 512,
+      "actual_graph_edges": 512,
+      "per_step_dense_pair_rows": 262144,
+      "all_pairs_over_edges": 512.0
+    },
+    {
+      "task": "sssp",
+      "sample_id": "c9ae2baa10689e9825ef03298c2c94e4dac32e22091cbc5ebece07ee380fc11f",
+      "n": 64,
+      "actual_graph_edges": 382,
+      "per_step_dense_pair_rows": 4096,
+      "all_pairs_over_edges": 10.722513089005236
+    }
+  ],
+  "caption": "6张不同合成输入，跨32/64/128/512节点；同一输入的不同前缀/方法未当作更多图。部分点重合，未人为抖动。\n张量形状显示先在全部n²节点对上执行消息MLP，再应用边掩码；更新MLP也覆盖当前每一步的全部n个节点。\n这是当前实现的计算路径证据，不是稀疏实现的实测加速比，也不是总体性能比较。"
+}

@@ -1,6 +1,6 @@
 {
-  "stage": "development_cases_input_profile_and_local_mechanism",
-  "published_snapshot": "2026-11-03T02:32:09.284750+08:00",
+  "stage": "development_cases_input_profile_local_mechanism_and_execution_counts",
+  "published_snapshot": "2026-11-03T03:34:11.407040+08:00",
   "public_inputs": "Synthetic graph cases and saved predictions only.",
   "case_views": 7,
   "unique_graph_inputs": 5,
@@ -13,9 +13,13 @@
   "local_mechanism_snapshot_epochs": 35,
   "local_mechanism_manifest_sha256": "15eab050da455987f40496ffc66e42bc2e7719e8d6a5948be6194a27c9f02012",
   "local_mechanism_figures_manifest_sha256": "fd1681cb39333a84f127d50189f729deee515e5e57f4e596063663e22df0999b",
+  "execution_counts_rows": 77,
+  "execution_counts_distinct_inputs": 6,
+  "execution_counts_formal_performance": false,
+  "execution_figure_manifest_sha256": "6d47faad7f761c925dadd44e5a38ad5327ba93e883d4c6a1bb1a4363190c9282",
   "exact_input_profile_source_sha256": "666a9f3ae6873269b0266d3f185bf240b0d996ce53b2833e582c420d18d73f85",
   "files": {
-    "index.html": "ac2616585b740dd9a4c57d0d78c84392061cc239648d77bab1e8b29a525350df",
+    "index.html": "2231602263f0656ae98412745b82da5221e8620ec508787c83907f0593b8bb9d",
     "cases/index.html": "23fbeabaa68141593349c5ae68dafd438f15184c501cb7b3fa4c8c3c2e55937b",
     "cases/case_data.json": "10a8cd80429cfcdeb8e8d27db2bfceeac921066c6145641fd0bfd267a285b114",
     "assets/tiny_route_case.png": "c3b850358287d9375488936e8a68085f16e3e3ab6257a1d94ffd649bff4b517a",
@@ -28,6 +32,13 @@
     "assets/same_old_state_gate_scores.pdf": "7134f3a1e65715b29537a9ef16c5f262a6a384f67514a0eaeb72f9015eee8b66",
     "data/same_old_state_gate_scores_source.json": "abf6c9dc96445cd8837e923e67e577296305bc52fa95b0ad41e89aa7a25cc712",
     "data/local_mechanism_figures_manifest.json": "2b17bd598014c6ff5d23f5ca38c940333f5cf909e0867db8614760557a2fc193",
+    "assets/same_rounds_different_linear_work.png": "9c71783070f701bb739d61cbb80ab39dcd5dbba505fede17bb21d1d30726b77b",
+    "assets/same_rounds_different_linear_work.pdf": "0e91521e4a3971f80a7054c7e6e40f166c39839523a4081f43a2b732cd5c7336",
+    "data/same_rounds_different_linear_work_source.json": "5a8cef7591c07a574d5887efff5e50a147b2bbbee250dba4aebe90873fa26743",
+    "assets/dense_messages_on_sparse_graphs.png": "07a38d23fccc8c23924921cf11a4a502f9a9cfe217f8225176e7fd8335f28668",
+    "assets/dense_messages_on_sparse_graphs.pdf": "764375ba2deb1528d8e0c193dc66758c900e3cedb1d4b01503a38474700c8f0c",
+    "data/dense_messages_on_sparse_graphs_source.json": "f083790fbb1b99b350e50c53cfba140dabbff13f44c2bbb57faceb6abcae8a28",
+    "data/execution_counts_manifest.json": "b578d641ed6f7dca5b58f8c013b8e82423a2bb20df9e038316a6730b9b184271",
     "counterfactual/index.html": "c62ab6a2766dd2d51702df36af84687ba37a661c3c1bc94dcc83c84686234ab8",
     "counterfactual/case_data.json": "bc6768f18465aa886c59b3a789702f2d04138bbdf917af7b64f5afde63f0667a",
     "counterfactual/manifest.json": "f47f597864ab53a7562f8a87fefbb4e47eea204d2722697d5b83ad0b144599bf",
@@ -41,6 +52,6 @@
     "data/node_metric_summary.json": "2d8ca8b6d231baa7a418670506c3f025f87ef258f06aa67330a6684aa615b173"
   },
   "selection_data_sha256": "f0fc9b02710b0e85fb69a708146a8c99cd7950d2fbe6771c1782cdcc7117f41a",
-  "builder_source_sha256": "47d1724c5ff4ba4b1cf5e52c4ca64630b62973ac0b6e2917354406795dc90823",
+  "builder_source_sha256": "4b2a37a96ad9569697b8877c1b5733bc8328a0962acdfc76777ff8a37044d3da",
   "interpretation": "Illustrative best/worst cases, not a prevalence estimate. The full study remains in progress."
 }
