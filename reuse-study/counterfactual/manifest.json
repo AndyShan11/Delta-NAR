@@ -1,0 +1,24 @@
+{
+  "status": "exported_from_browser_reviewed_source",
+  "stage": "local_counterfactual_mechanism_only",
+  "unique_counterfactual_pairs": 40,
+  "paired_runs": 840,
+  "source_raw_sha256": "e5350b8e393cc808f10a6e779db6ed1c8c600920be2e525c9646c42c73f829ee",
+  "audited_analysis_sha256": "8a39f0a48949c5bdb70bf2d4164977e031cd8fb31e6ac71c8d235eec5bf43ebc",
+  "builder_sha256": "db80a43287522fdf209df38ed604097264a622c6be15b890513231d47a4c478a",
+  "template_sha256": "3a00d6651785f3c99bac04405721bafef590181fd500c8d00bd4a98cba260315",
+  "files": {
+    "index.html": "09c19b1fcb37301fadb8fddeebb6cf22a865daf1eef1255a5fba4ecf9965739b",
+    "case_data.json": "d4444a19a2dedd50f98adb22e45698ccffea4f175a7d5db623fd99170d7b1341"
+  },
+  "collapse": "Each branch retains first/last vertex IDs and original vertex/edge counts; full IDs in source JSON.",
+  "qualification": "Saved local merge-node diagnostics, not a final50-epoch model or whole-CopySafe evaluation.",
+  "browser_review_sha256": "e45e26937430dfb3312df6f13744f7dddb1551fa5f85ec5492944f0f6a417b93",
+  "reviewed_controls": 6,
+  "source_export_manifest_sha256": "40ec4cf6df0967a44743b84871e891a6e69954c573db51cbc2a1d9bb572602d2",
+  "source_files": {
+    "index.html": "426621363e70b628d8c01a386f065097d44639dbbce2c0e5973d0b487eb90249",
+    "case_data.json": "d4444a19a2dedd50f98adb22e45698ccffea4f175a7d5db623fd99170d7b1341"
+  },
+  "public_navigation_added": true
+}
