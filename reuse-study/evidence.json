@@ -1,6 +1,6 @@
 {
   "stage": "development_cases_input_profile_mechanism_counts_and_dependency",
-  "published_snapshot": "2026-11-03T04:18:12.035508+08:00",
+  "published_snapshot": "2026-11-03T05:07:35.594514+08:00",
   "public_inputs": "Synthetic graph cases and saved predictions only.",
   "case_views": 7,
   "unique_graph_inputs": 5,
@@ -22,8 +22,8 @@
   "dependency_case_manifest_sha256": "08cdd5bd3640dcc57be3811aad9b7fed37ebb51de0a0066fb745355e5d733e80",
   "exact_input_profile_source_sha256": "666a9f3ae6873269b0266d3f185bf240b0d996ce53b2833e582c420d18d73f85",
   "files": {
-    "index.html": "4941dcfdf0a4036aa7f54ea7c533450d4aafa3af549bb4a47c0da591dddbd222",
-    "cases/index.html": "23fbeabaa68141593349c5ae68dafd438f15184c501cb7b3fa4c8c3c2e55937b",
+    "index.html": "c5a21c7bd24ed72db64fdd42df7ed6d02e2c63282316f239865add63b02ef834",
+    "cases/index.html": "f2eb28aac730f67c14a1ca41bec810275d6f34c7fc8d0cf7c56219afaaf5a58e",
     "cases/case_data.json": "10a8cd80429cfcdeb8e8d27db2bfceeac921066c6145641fd0bfd267a285b114",
     "assets/tiny_route_case.png": "c3b850358287d9375488936e8a68085f16e3e3ab6257a1d94ffd649bff4b517a",
     "assets/tiny_route_case.pdf": "160b10e2e85b05f50694bba4950b408b870471bf2271c88eb951b624c3ebe82b",
@@ -60,6 +60,8 @@
     "data/node_metric_summary.json": "2d8ca8b6d231baa7a418670506c3f025f87ef258f06aa67330a6684aa615b173"
   },
   "selection_data_sha256": "f0fc9b02710b0e85fb69a708146a8c99cd7950d2fbe6771c1782cdcc7117f41a",
-  "builder_source_sha256": "a994a039672dfbd6e7489d0c6921fa3f58972e7f20423a5d382fc77aee51351a",
+  "builder_source_sha256": "4685d4359b3da047e415ce3bd49e44fa8cb3d102bb8ad5d8c47c6b5facf3f3de",
+  "case_viewer_template_sha256": "922bcd530802c2cfcb52958e438ea716307f33839a107f77864573760042b9ab",
+  "case_viewer_review_manifest_sha256": "c92da93ca4a98b7fb065171973f9ff1301bd86abe687272d62d2d38209c39249",
   "interpretation": "Illustrative best/worst cases, not a prevalence estimate. The full study remains in progress."
 }

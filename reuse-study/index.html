@@ -89,5 +89,5 @@
 
 <section id="evidence"><h2>证据与进度</h2><div class="twocol"><div class="surface"><span class="state">已核对的开发证据</span><h3>保留成功，也保留失败</h3><ul><li>旧权重开发结果共 6,480 条记录；128 轮补充诊断另有 648 条记录，沿用 12 个旧输入。</li><li>补充诊断未出现非有限输出；增加轮数没有稳定提高正确率。</li><li>这里的安全分不是正确概率保证；最终无错误复用也可能来自上游修复使复制重新有效，或回退取消复制，必须结合路径与复制覆盖判断。</li></ul><p class="muted">旧模型阈值按 8 轮校准。长轮数结果仅作诊断，不能替代匹配训练的新模型实验。</p></div>
 <div class="surface"><span class="state pending">完整正式实验尚未完成</span><h3>完成后更新同一网址</h3><ul><li>5 种主方法与 6 种控制；固定图、扰动和模型种子。</li><li>32–512 节点，多图族、多扰动强度；前缀轮数 8–128，另含远距离竞争路线。</li><li>报告整图正确率、关键误复用、风险漏检、回退修正与包含开销的实际耗时。</li><li>对齐图 ID 与训练种子做配对统计，再发布一页小结和详细报告。</li></ul><p class="muted">正式模型采用共同的逐步 LayerNorm 稳定化版本；与原始模型的区别将在报告中披露。</p></div></div></section>
-<footer><span>发布快照：2026-11-03 04:18 UTC+8 · <a href="evidence.json">页面数据与文件指纹</a></span><span><a href="https://github.com/AndyShan11/Delta-NAR/tree/main/reuse-study">页面源码</a> · 合成图实例</span></footer>
+<footer><span>发布快照：2026-11-03 05:07 UTC+8 · <a href="evidence.json">页面数据与文件指纹</a></span><span><a href="https://github.com/AndyShan11/Delta-NAR/tree/main/reuse-study">页面源码</a> · 合成图实例</span></footer>
 </main></body></html>
