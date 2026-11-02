@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="950.4pt" height="561.6pt" viewBox="0 0 950.4 561.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-03T07:53:51.057256</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 561.6 
+L 950.4 561.6 
+L 950.4 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="table_1">
+    <g id="patch_2">
+     <path d="M 46.332 144.7524 
+L 192.14712 144.7524 
+L 192.14712 110.0736 
+L 46.332 110.0736 
+z
+" style="fill: #193548; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_1">
+     <text style="font-weight: 700; font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #ffffff" x="119.23956" y="130.442297" transform="rotate(-0 119.23956 130.442297)">方法</text>
+    </g>
+    <g id="patch_3">
+     <path d="M 192.14712 144.7524 
+L 329.38488 144.7524 
+L 329.38488 110.0736 
+L 192.14712 110.0736 
+z
+" style="fill: #193548; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_2">
+     <text style="font-weight: 700; font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #ffffff" x="260.766" y="130.442297" transform="rotate(-0 260.766 130.442297)">分支</text>
+    </g>
+    <g id="patch_4">
+     <path d="M 329.38488 144.7524 
+L 440.89056 144.7524 
+L 440.89056 110.0736 
+L 329.38488 110.0736 
+z
+" style="fill: #193548; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_3">
+     <text style="font-weight: 700; font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #ffffff" x="385.13772" y="130.442297" transform="rotate(-0 385.13772 130.442297)">传播步数</text>
+    </g>
+    <g id="patch_5">
+     <path d="M 440.89056 144.7524 
+L 552.39624 144.7524 
+L 552.39624 110.0736 
+L 440.89056 110.0736 
+z
+" style="fill: #193548; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_4">
+     <text style="font-weight: 700; font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #ffffff" x="496.6434" y="130.442297" transform="rotate(-0 496.6434 130.442297)">编码次数</text>
+    </g>
+    <g id="patch_6">
+     <path d="M 552.39624 144.7524 
+L 663.90192 144.7524 
+L 663.90192 110.0736 
+L 552.39624 110.0736 
+z
+" style="fill: #193548; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_5">
+     <text style="font-weight: 700; font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #ffffff" x="608.14908" y="130.442297" transform="rotate(-0 608.14908 130.442297)">解码次数</text>
+    </g>
+    <g id="patch_7">
+     <path d="M 663.90192 144.7524 
+L 792.56232 144.7524 
+L 792.56232 110.0736 
+L 663.90192 110.0736 
+z
+" style="fill: #193548; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_6">
+     <text style="font-weight: 700; font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #ffffff" x="728.23212" y="130.442297" transform="rotate(-0 728.23212 130.442297)">网络会话数</text>
+    </g>
+    <g id="patch_8">
+     <path d="M 792.56232 144.7524 
+L 904.068 144.7524 
+L 904.068 110.0736 
+L 792.56232 110.0736 
+z
+" style="fill: #193548; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_7">
+     <text style="font-weight: 700; font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #ffffff" x="848.31516" y="130.442297" transform="rotate(-0 848.31516 130.442297)">整图检查次数</text>
+    </g>
+    <g id="patch_9">
+     <path d="M 46.332 179.4312 
+L 192.14712 179.4312 
+L 192.14712 144.7524 
+L 46.332 144.7524 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_8">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="119.23956" y="165.121097" transform="rotate(-0 119.23956 165.121097)">完整重算</text>
+    </g>
+    <g id="patch_10">
+     <path d="M 192.14712 179.4312 
+L 329.38488 179.4312 
+L 329.38488 144.7524 
+L 192.14712 144.7524 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_9">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="260.766" y="165.121097" transform="rotate(-0 260.766 165.121097)">直接输出</text>
+    </g>
+    <g id="patch_11">
+     <path d="M 329.38488 179.4312 
+L 440.89056 179.4312 
+L 440.89056 144.7524 
+L 329.38488 144.7524 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="385.13772" y="165.121097" transform="rotate(-0 385.13772 165.121097)">16</text>
+    </g>
+    <g id="patch_12">
+     <path d="M 440.89056 179.4312 
+L 552.39624 179.4312 
+L 552.39624 144.7524 
+L 440.89056 144.7524 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_11">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="496.6434" y="165.121097" transform="rotate(-0 496.6434 165.121097)">1</text>
+    </g>
+    <g id="patch_13">
+     <path d="M 552.39624 179.4312 
+L 663.90192 179.4312 
+L 663.90192 144.7524 
+L 552.39624 144.7524 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="608.14908" y="165.121097" transform="rotate(-0 608.14908 165.121097)">1</text>
+    </g>
+    <g id="patch_14">
+     <path d="M 663.90192 179.4312 
+L 792.56232 179.4312 
+L 792.56232 144.7524 
+L 663.90192 144.7524 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_13">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="728.23212" y="165.121097" transform="rotate(-0 728.23212 165.121097)">1</text>
+    </g>
+    <g id="patch_15">
+     <path d="M 792.56232 179.4312 
+L 904.068 179.4312 
+L 904.068 144.7524 
+L 792.56232 144.7524 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="848.31516" y="165.121097" transform="rotate(-0 848.31516 165.121097)">0</text>
+    </g>
+    <g id="patch_16">
+     <path d="M 46.332 214.11 
+L 192.14712 214.11 
+L 192.14712 179.4312 
+L 46.332 179.4312 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="119.23956" y="199.799897" transform="rotate(-0 119.23956 199.799897)">全部复用</text>
+    </g>
+    <g id="patch_17">
+     <path d="M 192.14712 214.11 
+L 329.38488 214.11 
+L 329.38488 179.4312 
+L 192.14712 179.4312 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="260.766" y="199.799897" transform="rotate(-0 260.766 199.799897)">直接输出</text>
+    </g>
+    <g id="patch_18">
+     <path d="M 329.38488 214.11 
+L 440.89056 214.11 
+L 440.89056 179.4312 
+L 329.38488 179.4312 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_17">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="385.13772" y="199.799897" transform="rotate(-0 385.13772 199.799897)">0</text>
+    </g>
+    <g id="patch_19">
+     <path d="M 440.89056 214.11 
+L 552.39624 214.11 
+L 552.39624 179.4312 
+L 440.89056 179.4312 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_18">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="496.6434" y="199.799897" transform="rotate(-0 496.6434 199.799897)">0</text>
+    </g>
+    <g id="patch_20">
+     <path d="M 552.39624 214.11 
+L 663.90192 214.11 
+L 663.90192 179.4312 
+L 552.39624 179.4312 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_19">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="608.14908" y="199.799897" transform="rotate(-0 608.14908 199.799897)">0</text>
+    </g>
+    <g id="patch_21">
+     <path d="M 663.90192 214.11 
+L 792.56232 214.11 
+L 792.56232 179.4312 
+L 663.90192 179.4312 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_20">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="728.23212" y="199.799897" transform="rotate(-0 728.23212 199.799897)">0</text>
+    </g>
+    <g id="patch_22">
+     <path d="M 792.56232 214.11 
+L 904.068 214.11 
+L 904.068 179.4312 
+L 792.56232 179.4312 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_21">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="848.31516" y="199.799897" transform="rotate(-0 848.31516 199.799897)">0</text>
+    </g>
+    <g id="patch_23">
+     <path d="M 46.332 248.7888 
+L 192.14712 248.7888 
+L 192.14712 214.11 
+L 46.332 214.11 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_22">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="119.23956" y="234.4469" transform="rotate(-0 119.23956 234.4469)">Repair-only</text>
+    </g>
+    <g id="patch_24">
+     <path d="M 192.14712 248.7888 
+L 329.38488 248.7888 
+L 329.38488 214.11 
+L 192.14712 214.11 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_23">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="260.766" y="234.478697" transform="rotate(-0 260.766 234.478697)">直接输出</text>
+    </g>
+    <g id="patch_25">
+     <path d="M 329.38488 248.7888 
+L 440.89056 248.7888 
+L 440.89056 214.11 
+L 329.38488 214.11 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_24">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="385.13772" y="234.478697" transform="rotate(-0 385.13772 234.478697)">16</text>
+    </g>
+    <g id="patch_26">
+     <path d="M 440.89056 248.7888 
+L 552.39624 248.7888 
+L 552.39624 214.11 
+L 440.89056 214.11 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_25">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="496.6434" y="234.478697" transform="rotate(-0 496.6434 234.478697)">1</text>
+    </g>
+    <g id="patch_27">
+     <path d="M 552.39624 248.7888 
+L 663.90192 248.7888 
+L 663.90192 214.11 
+L 552.39624 214.11 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_26">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="608.14908" y="234.478697" transform="rotate(-0 608.14908 234.478697)">1</text>
+    </g>
+    <g id="patch_28">
+     <path d="M 663.90192 248.7888 
+L 792.56232 248.7888 
+L 792.56232 214.11 
+L 663.90192 214.11 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_27">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="728.23212" y="234.478697" transform="rotate(-0 728.23212 234.478697)">1</text>
+    </g>
+    <g id="patch_29">
+     <path d="M 792.56232 248.7888 
+L 904.068 248.7888 
+L 904.068 214.11 
+L 792.56232 214.11 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_28">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="848.31516" y="234.478697" transform="rotate(-0 848.31516 234.478697)">0</text>
+    </g>
+    <g id="patch_30">
+     <path d="M 46.332 283.4676 
+L 192.14712 283.4676 
+L 192.14712 248.7888 
+L 46.332 248.7888 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_29">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="119.23956" y="269.190153" transform="rotate(-0 119.23956 269.190153)">CopySafe</text>
+    </g>
+    <g id="patch_31">
+     <path d="M 192.14712 283.4676 
+L 329.38488 283.4676 
+L 329.38488 248.7888 
+L 192.14712 248.7888 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_30">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="260.766" y="269.157497" transform="rotate(-0 260.766 269.157497)">通过</text>
+    </g>
+    <g id="patch_32">
+     <path d="M 329.38488 283.4676 
+L 440.89056 283.4676 
+L 440.89056 248.7888 
+L 329.38488 248.7888 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_31">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="385.13772" y="269.157497" transform="rotate(-0 385.13772 269.157497)">8</text>
+    </g>
+    <g id="patch_33">
+     <path d="M 440.89056 283.4676 
+L 552.39624 283.4676 
+L 552.39624 248.7888 
+L 440.89056 248.7888 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_32">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="496.6434" y="269.157497" transform="rotate(-0 496.6434 269.157497)">1</text>
+    </g>
+    <g id="patch_34">
+     <path d="M 552.39624 283.4676 
+L 663.90192 283.4676 
+L 663.90192 248.7888 
+L 552.39624 248.7888 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_33">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="608.14908" y="269.157497" transform="rotate(-0 608.14908 269.157497)">1</text>
+    </g>
+    <g id="patch_35">
+     <path d="M 663.90192 283.4676 
+L 792.56232 283.4676 
+L 792.56232 248.7888 
+L 663.90192 248.7888 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_34">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="728.23212" y="269.157497" transform="rotate(-0 728.23212 269.157497)">1</text>
+    </g>
+    <g id="patch_36">
+     <path d="M 792.56232 283.4676 
+L 904.068 283.4676 
+L 904.068 248.7888 
+L 792.56232 248.7888 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_35">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="848.31516" y="269.157497" transform="rotate(-0 848.31516 269.157497)">1</text>
+    </g>
+    <g id="patch_37">
+     <path d="M 46.332 318.1464 
+L 192.14712 318.1464 
+L 192.14712 283.4676 
+L 46.332 283.4676 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_36">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="119.23956" y="303.868953" transform="rotate(-0 119.23956 303.868953)">CopySafe</text>
+    </g>
+    <g id="patch_38">
+     <path d="M 192.14712 318.1464 
+L 329.38488 318.1464 
+L 329.38488 283.4676 
+L 192.14712 283.4676 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_37">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="260.766" y="303.836297" transform="rotate(-0 260.766 303.836297)">失败回退</text>
+    </g>
+    <g id="patch_39">
+     <path d="M 329.38488 318.1464 
+L 440.89056 318.1464 
+L 440.89056 283.4676 
+L 329.38488 283.4676 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_38">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="385.13772" y="303.836297" transform="rotate(-0 385.13772 303.836297)">16</text>
+    </g>
+    <g id="patch_40">
+     <path d="M 440.89056 318.1464 
+L 552.39624 318.1464 
+L 552.39624 283.4676 
+L 440.89056 283.4676 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_39">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="496.6434" y="303.836297" transform="rotate(-0 496.6434 303.836297)">2</text>
+    </g>
+    <g id="patch_41">
+     <path d="M 552.39624 318.1464 
+L 663.90192 318.1464 
+L 663.90192 283.4676 
+L 552.39624 283.4676 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_40">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="608.14908" y="303.836297" transform="rotate(-0 608.14908 303.836297)">2</text>
+    </g>
+    <g id="patch_42">
+     <path d="M 663.90192 318.1464 
+L 792.56232 318.1464 
+L 792.56232 283.4676 
+L 663.90192 283.4676 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_41">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="728.23212" y="303.836297" transform="rotate(-0 728.23212 303.836297)">2</text>
+    </g>
+    <g id="patch_43">
+     <path d="M 792.56232 318.1464 
+L 904.068 318.1464 
+L 904.068 283.4676 
+L 792.56232 283.4676 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_42">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="848.31516" y="303.836297" transform="rotate(-0 848.31516 303.836297)">1</text>
+    </g>
+    <g id="patch_44">
+     <path d="M 46.332 352.8252 
+L 192.14712 352.8252 
+L 192.14712 318.1464 
+L 46.332 318.1464 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_43">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="119.23956" y="338.515097" transform="rotate(-0 119.23956 338.515097)">通过后续算</text>
+    </g>
+    <g id="patch_45">
+     <path d="M 192.14712 352.8252 
+L 329.38488 352.8252 
+L 329.38488 318.1464 
+L 192.14712 318.1464 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_44">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="260.766" y="338.515097" transform="rotate(-0 260.766 338.515097)">通过</text>
+    </g>
+    <g id="patch_46">
+     <path d="M 329.38488 352.8252 
+L 440.89056 352.8252 
+L 440.89056 318.1464 
+L 329.38488 318.1464 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_45">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="385.13772" y="338.515097" transform="rotate(-0 385.13772 338.515097)">16</text>
+    </g>
+    <g id="patch_47">
+     <path d="M 440.89056 352.8252 
+L 552.39624 352.8252 
+L 552.39624 318.1464 
+L 440.89056 318.1464 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_46">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="496.6434" y="338.515097" transform="rotate(-0 496.6434 338.515097)">1</text>
+    </g>
+    <g id="patch_48">
+     <path d="M 552.39624 352.8252 
+L 663.90192 352.8252 
+L 663.90192 318.1464 
+L 552.39624 318.1464 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_47">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="608.14908" y="338.515097" transform="rotate(-0 608.14908 338.515097)">2</text>
+    </g>
+    <g id="patch_49">
+     <path d="M 663.90192 352.8252 
+L 792.56232 352.8252 
+L 792.56232 318.1464 
+L 663.90192 318.1464 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_48">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="728.23212" y="338.515097" transform="rotate(-0 728.23212 338.515097)">1</text>
+    </g>
+    <g id="patch_50">
+     <path d="M 792.56232 352.8252 
+L 904.068 352.8252 
+L 904.068 318.1464 
+L 792.56232 318.1464 
+z
+" style="fill: #ffffff; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_49">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="848.31516" y="338.515097" transform="rotate(-0 848.31516 338.515097)">1</text>
+    </g>
+    <g id="patch_51">
+     <path d="M 46.332 387.504 
+L 192.14712 387.504 
+L 192.14712 352.8252 
+L 46.332 352.8252 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_50">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="119.23956" y="373.193897" transform="rotate(-0 119.23956 373.193897)">通过后续算</text>
+    </g>
+    <g id="patch_52">
+     <path d="M 192.14712 387.504 
+L 329.38488 387.504 
+L 329.38488 352.8252 
+L 192.14712 352.8252 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_51">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="260.766" y="373.193897" transform="rotate(-0 260.766 373.193897)">失败回退</text>
+    </g>
+    <g id="patch_53">
+     <path d="M 329.38488 387.504 
+L 440.89056 387.504 
+L 440.89056 352.8252 
+L 329.38488 352.8252 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_52">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="385.13772" y="373.193897" transform="rotate(-0 385.13772 373.193897)">16</text>
+    </g>
+    <g id="patch_54">
+     <path d="M 440.89056 387.504 
+L 552.39624 387.504 
+L 552.39624 352.8252 
+L 440.89056 352.8252 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_53">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="496.6434" y="373.193897" transform="rotate(-0 496.6434 373.193897)">2</text>
+    </g>
+    <g id="patch_55">
+     <path d="M 552.39624 387.504 
+L 663.90192 387.504 
+L 663.90192 352.8252 
+L 552.39624 352.8252 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_54">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="608.14908" y="373.193897" transform="rotate(-0 608.14908 373.193897)">2</text>
+    </g>
+    <g id="patch_56">
+     <path d="M 663.90192 387.504 
+L 792.56232 387.504 
+L 792.56232 352.8252 
+L 663.90192 352.8252 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_55">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="728.23212" y="373.193897" transform="rotate(-0 728.23212 373.193897)">2</text>
+    </g>
+    <g id="patch_57">
+     <path d="M 792.56232 387.504 
+L 904.068 387.504 
+L 904.068 352.8252 
+L 792.56232 352.8252 
+z
+" style="fill: #f1f6f8; stroke: #d4dfe6; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_56">
+     <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="848.31516" y="373.193897" transform="rotate(-0 848.31516 373.193897)">1</text>
+    </g>
+   </g>
+   <g id="text_57">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #193548" x="475.2" y="46.832475" transform="rotate(-0 475.2 46.832475)">五种方法，七条执行分支</text>
+   </g>
+   <g id="text_58">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #546877" x="475.2" y="67.392" transform="rotate(-0 475.2 67.392)">R=8；次数对照30条真实旧权重记录。轮数相同，编码、解码和判断成本仍可能不同。</text>
+   </g>
+   <g id="text_59">
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #193548" x="46.332" y="422.1828" transform="rotate(-0 46.332 422.1828)">网络会话数 = 独立编码启动的计算过程；同一隐状态续算仍计为一次会话，但需要第二次解码。</text>
+   </g>
+   <g id="text_60">
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #193548" x="46.332" y="449.92584" transform="rotate(-0 46.332 449.92584)">Repair-only：全图运行 Repair 16 步，不做输出层的旧、新混合，也不做整图检查。</text>
+   </g>
+   <g id="text_61">
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #193548" x="46.332" y="477.66888" transform="rotate(-0 46.332 477.66888)">CopySafe 通过只算 8 步；通过后续算固定算 16 步。失败均为 Repair 8 步 + 独立 Recompute 8 步。</text>
+   </g>
+   <g id="text_62">
+    <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #546877" x="46.332" y="505.41192" transform="rotate(-0 46.332 505.41192)">每次解码还含规范化与全局父链路径值刷新。表格不等于 FLOPs、时间或正确率；完整策略耗时另行测量。</text>
+   </g>
+   <g id="text_63">
+    <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #546877" x="46.332" y="533.15496" transform="rotate(-0 46.332 533.15496)">来源：固定策略代码 + 6个 R=8 上下文（6张输入）；分支出现次数不是总体回退概率。正式模型结果待完成。</text>
+   </g>
+  </g>
+ </g>
+</svg>

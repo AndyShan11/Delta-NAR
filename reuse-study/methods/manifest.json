@@ -1,0 +1,58 @@
+{
+  "status": "visually_reviewed",
+  "visually_reviewed": true,
+  "stage": "source_pinned_control_flow_and_old_execution_counts",
+  "new_formal_results": false,
+  "source_sha256": "a70b326d2a2584aaed2f448b856696344b14d05c6b1de1e28680dade030a3183",
+  "actual_saved_rows_checked": 35,
+  "files": {
+    "method_execution.png": "1fdd05d952c225b9e8f9dd24fdcd3ac95f4da959f5642833d8370ae1aec05332",
+    "method_execution.svg": "197e01d638d947c583a6ee9f67068452a520b7328c5aac39c5da014bbe547fdc",
+    "method_counts.png": "396fe8c6cad573f5304c3fea9807baa868aa0337279c446ce862e3a834c758b5",
+    "method_counts.svg": "61da9c45598d5b90fb2893e12766aba231899d585dddaba678af14e7f93287dc",
+    "figure_source.json": "5a5ce52f2f303a26d314f1a2791ee1ef19d1b1c2cede0fe0bf50fe4bbef9a190"
+  },
+  "reviewed_at_utc": "2026-11-02T23:55:38.034589+00:00",
+  "review_notes": [
+    "Both actual PNGs inspected. All7 table rows legible, no clipped text.",
+    "Initial continuation heading overlapped multiline body; fixed dynamic title offset, regenerated and re-inspected actual output.",
+    "Branch arrows separately identify acceptance endpoints and common rejection. Labels carry meaning without color.",
+    "Figures explicitly distinguish execution logic/old trace evidence from formal new-model performance."
+  ],
+  "png_sizes": {
+    "method_execution.png": [
+      2640,
+      2160
+    ],
+    "method_counts.png": [
+      2640,
+      1560
+    ]
+  },
+  "journal_specific_compliance_claimed": false,
+  "visual_review_source_sha256": "67bc99d67dfccc10b20aa85051e2e9099fe49d214fce610b2cc5857af19f2d1e",
+  "source_export_files": {
+    "method_execution.png": "1fdd05d952c225b9e8f9dd24fdcd3ac95f4da959f5642833d8370ae1aec05332",
+    "method_execution.svg": "86da5e1c53300b52dbab92fdc41f2952a0747150ef5bf29b32b51e56d7217907",
+    "method_counts.png": "396fe8c6cad573f5304c3fea9807baa868aa0337279c446ce862e3a834c758b5",
+    "method_counts.svg": "6fab96076974da35eeac61ea0a5690fc8d179f4a3840d3dbb0164ef099f30b30",
+    "figure_source.json": "5a5ce52f2f303a26d314f1a2791ee1ef19d1b1c2cede0fe0bf50fe4bbef9a190"
+  },
+  "source_export_manifest_sha256": "57d697376b5411a2a60e14b37aebf1083518c0d0bca36a5f5744f1ab74e87f6e",
+  "text_export_line_endings": "LF",
+  "independent_execution_audit": {
+    "status": "PASS",
+    "verified_at_utc": "2026-11-02T23:55:38.262820+00:00",
+    "actual_saved_traces_checked": 35,
+    "r8_traces_behind_table": 30,
+    "execution_branches": 7,
+    "dense_mlp_shape_checks": 144,
+    "source_input_projection_excludes_new_labels": true,
+    "accepted_continuation_same_hidden_no_reencode_or_second_check": true,
+    "full_figure_manifest_sha256": "57d697376b5411a2a60e14b37aebf1083518c0d0bca36a5f5744f1ab74e87f6e",
+    "raw_sha256": "172d874bc182b94c43f655e21ff0f7a981f1ac9370ac4922100462e1fff711fa",
+    "new_neural_inferences": 0,
+    "new_formal_results": false,
+    "verifier_sha256": "7cfbc68d6805f4fa7265e48fbc3f22243e1eb51b51b9c3bc9a130363b45d55f4"
+  }
+}

@@ -1,0 +1,1186 @@
+{
+  "stage": "source_pinned_control_flow_and_old_execution_counts",
+  "new_formal_results": false,
+  "new_neural_inferences": 0,
+  "source_hashes": {
+    "expanded.py": "bab7c566eb5ce385b6f252d95734d5bd1a5ba74793d8ba802a366dcd0c35cf09",
+    "formal_eval.py": "29cfcaf6e40a36cbb082ef95571c43f15f44c132f0ac825a03e60188360edd83",
+    "resumable.py": "8118f05e5e11494043db4dc5bbee95ea48e128a3b67c0a44b9c4030d48b9a59e",
+    "stabilized.py": "c515626fdf898144bec05c19f44f45d16a405e29b975893116ecc43563c41c67",
+    "focused_reuse/run.py": "dde3bb9833be80312b1705aff0bac807fdba3a51965e17b5eac5038ee2b32243",
+    "focused_reuse/core.py": "8ce07604952f4417c577b2660a8948626e977ed07eea1b44ba4d156515a55d82"
+  },
+  "raw_sha256": "172d874bc182b94c43f655e21ff0f7a981f1ac9370ac4922100462e1fff711fa",
+  "execution_audit_sha256": "ec7961f1214c6ee6ad64908a4c4cd1617475a4bcf33927799afc23f389b9eed6",
+  "generator_sha256": "a70b326d2a2584aaed2f448b856696344b14d05c6b1de1e28680dade030a3183",
+  "actual_saved_rows_checked": 35,
+  "contexts": 7,
+  "unique_inputs": 6,
+  "r8_saved_rows_behind_table": 30,
+  "trained_network_roles": [
+    "recompute",
+    "repair"
+  ],
+  "loader_role_loop_lines": [
+    33,
+    43
+  ],
+  "continuation_statements": [
+    "sync(device)",
+    "start = time.perf_counter()",
+    "h = model.advance(h, ctx, 8)",
+    "p, v, _ = decoded(model, h, ctx, s, task)",
+    "sync(device)",
+    "extra['continuation_seconds'] = time.perf_counter() - start",
+    "extra['continued'] = True",
+    "result.pred = p",
+    "result.values = v",
+    "result.copied = none",
+    "result.mp_rounds += 8"
+  ],
+  "table": [
+    {
+      "method": "recompute_total",
+      "label": "完整重算",
+      "branch": "direct",
+      "actual_rounds": 16,
+      "encode_calls": 1,
+      "decode_calls": 1,
+      "model_calls": 1,
+      "certificate_calls": 0,
+      "observed_rows": 6
+    },
+    {
+      "method": "pure_copy",
+      "label": "全部复用",
+      "branch": "direct",
+      "actual_rounds": 0,
+      "encode_calls": 0,
+      "decode_calls": 0,
+      "model_calls": 0,
+      "certificate_calls": 0,
+      "observed_rows": 6
+    },
+    {
+      "method": "repair_total",
+      "label": "Repair-only",
+      "branch": "direct",
+      "actual_rounds": 16,
+      "encode_calls": 1,
+      "decode_calls": 1,
+      "model_calls": 1,
+      "certificate_calls": 0,
+      "observed_rows": 6
+    },
+    {
+      "method": "copysafe",
+      "label": "CopySafe",
+      "branch": "accept",
+      "actual_rounds": 8,
+      "encode_calls": 1,
+      "decode_calls": 1,
+      "model_calls": 1,
+      "certificate_calls": 1,
+      "observed_rows": 3
+    },
+    {
+      "method": "copysafe",
+      "label": "CopySafe",
+      "branch": "reject",
+      "actual_rounds": 16,
+      "encode_calls": 2,
+      "decode_calls": 2,
+      "model_calls": 2,
+      "certificate_calls": 1,
+      "observed_rows": 3
+    },
+    {
+      "method": "continue",
+      "label": "通过后续算",
+      "branch": "accept",
+      "actual_rounds": 16,
+      "encode_calls": 1,
+      "decode_calls": 2,
+      "model_calls": 1,
+      "certificate_calls": 1,
+      "observed_rows": 3
+    },
+    {
+      "method": "continue",
+      "label": "通过后续算",
+      "branch": "reject",
+      "actual_rounds": 16,
+      "encode_calls": 2,
+      "decode_calls": 2,
+      "model_calls": 2,
+      "certificate_calls": 1,
+      "observed_rows": 3
+    }
+  ],
+  "trace_counts": [
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "054a27ee6250f37e69360f8155d9051988944136ffab4879915d7cc0d5393743",
+        8,
+        "recompute_total"
+      ],
+      "method": "recompute_total",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 0,
+        "recompute": 1
+      },
+      "decode_calls": {
+        "repair": 0,
+        "recompute": 1
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 0,
+        "recompute": 16
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "054a27ee6250f37e69360f8155d9051988944136ffab4879915d7cc0d5393743",
+        8,
+        "pure_copy"
+      ],
+      "method": "pure_copy",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 0,
+      "encode_calls": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "model_calls": 0,
+      "per_role_steps": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 31
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "054a27ee6250f37e69360f8155d9051988944136ffab4879915d7cc0d5393743",
+        8,
+        "repair_total"
+      ],
+      "method": "repair_total",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 16,
+        "recompute": 0
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "054a27ee6250f37e69360f8155d9051988944136ffab4879915d7cc0d5393743",
+        8,
+        "copysafe"
+      ],
+      "method": "copysafe",
+      "branch": "reject",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 1
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 1
+      },
+      "model_calls": 2,
+      "per_role_steps": {
+        "repair": 8,
+        "recompute": 8
+      },
+      "certificate_calls": 1,
+      "continued": false,
+      "fallback": true,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "054a27ee6250f37e69360f8155d9051988944136ffab4879915d7cc0d5393743",
+        8,
+        "continue"
+      ],
+      "method": "continue",
+      "branch": "reject",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 1
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 1
+      },
+      "model_calls": 2,
+      "per_role_steps": {
+        "repair": 8,
+        "recompute": 8
+      },
+      "certificate_calls": 1,
+      "continued": false,
+      "fallback": true,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "192ebd4b1e4e364e9815095e62f330869f0926f62eb5c1e39e82f85ec4bfff07",
+        8,
+        "recompute_total"
+      ],
+      "method": "recompute_total",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 0,
+        "recompute": 1
+      },
+      "decode_calls": {
+        "repair": 0,
+        "recompute": 1
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 0,
+        "recompute": 16
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "192ebd4b1e4e364e9815095e62f330869f0926f62eb5c1e39e82f85ec4bfff07",
+        8,
+        "pure_copy"
+      ],
+      "method": "pure_copy",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 0,
+      "encode_calls": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "model_calls": 0,
+      "per_role_steps": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 31
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "192ebd4b1e4e364e9815095e62f330869f0926f62eb5c1e39e82f85ec4bfff07",
+        8,
+        "repair_total"
+      ],
+      "method": "repair_total",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 16,
+        "recompute": 0
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "192ebd4b1e4e364e9815095e62f330869f0926f62eb5c1e39e82f85ec4bfff07",
+        8,
+        "copysafe"
+      ],
+      "method": "copysafe",
+      "branch": "accept",
+      "prefix_rounds": 8,
+      "actual_rounds": 8,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 8,
+        "recompute": 0
+      },
+      "certificate_calls": 1,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 21
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "192ebd4b1e4e364e9815095e62f330869f0926f62eb5c1e39e82f85ec4bfff07",
+        8,
+        "continue"
+      ],
+      "method": "continue",
+      "branch": "accept",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 2,
+        "recompute": 0
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 16,
+        "recompute": 0
+      },
+      "certificate_calls": 1,
+      "continued": true,
+      "fallback": false,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "192ebd4b1e4e364e9815095e62f330869f0926f62eb5c1e39e82f85ec4bfff07",
+        16,
+        "recompute_total"
+      ],
+      "method": "recompute_total",
+      "branch": "direct",
+      "prefix_rounds": 16,
+      "actual_rounds": 24,
+      "encode_calls": {
+        "repair": 0,
+        "recompute": 1
+      },
+      "decode_calls": {
+        "repair": 0,
+        "recompute": 1
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 0,
+        "recompute": 24
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "192ebd4b1e4e364e9815095e62f330869f0926f62eb5c1e39e82f85ec4bfff07",
+        16,
+        "pure_copy"
+      ],
+      "method": "pure_copy",
+      "branch": "direct",
+      "prefix_rounds": 16,
+      "actual_rounds": 0,
+      "encode_calls": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "model_calls": 0,
+      "per_role_steps": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 31
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "192ebd4b1e4e364e9815095e62f330869f0926f62eb5c1e39e82f85ec4bfff07",
+        16,
+        "repair_total"
+      ],
+      "method": "repair_total",
+      "branch": "direct",
+      "prefix_rounds": 16,
+      "actual_rounds": 24,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 24,
+        "recompute": 0
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "192ebd4b1e4e364e9815095e62f330869f0926f62eb5c1e39e82f85ec4bfff07",
+        16,
+        "copysafe"
+      ],
+      "method": "copysafe",
+      "branch": "reject",
+      "prefix_rounds": 16,
+      "actual_rounds": 24,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 1
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 1
+      },
+      "model_calls": 2,
+      "per_role_steps": {
+        "repair": 16,
+        "recompute": 8
+      },
+      "certificate_calls": 1,
+      "continued": false,
+      "fallback": true,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "192ebd4b1e4e364e9815095e62f330869f0926f62eb5c1e39e82f85ec4bfff07",
+        16,
+        "continue"
+      ],
+      "method": "continue",
+      "branch": "reject",
+      "prefix_rounds": 16,
+      "actual_rounds": 24,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 1
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 1
+      },
+      "model_calls": 2,
+      "per_role_steps": {
+        "repair": 16,
+        "recompute": 8
+      },
+      "certificate_calls": 1,
+      "continued": false,
+      "fallback": true,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "b5008363a7c84a040079dbae00d4469d82a55b4ba53522147b330d0d74b4275d",
+        8,
+        "recompute_total"
+      ],
+      "method": "recompute_total",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 0,
+        "recompute": 1
+      },
+      "decode_calls": {
+        "repair": 0,
+        "recompute": 1
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 0,
+        "recompute": 16
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "b5008363a7c84a040079dbae00d4469d82a55b4ba53522147b330d0d74b4275d",
+        8,
+        "pure_copy"
+      ],
+      "method": "pure_copy",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 0,
+      "encode_calls": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "model_calls": 0,
+      "per_role_steps": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 31
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "b5008363a7c84a040079dbae00d4469d82a55b4ba53522147b330d0d74b4275d",
+        8,
+        "repair_total"
+      ],
+      "method": "repair_total",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 16,
+        "recompute": 0
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "b5008363a7c84a040079dbae00d4469d82a55b4ba53522147b330d0d74b4275d",
+        8,
+        "copysafe"
+      ],
+      "method": "copysafe",
+      "branch": "reject",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 1
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 1
+      },
+      "model_calls": 2,
+      "per_role_steps": {
+        "repair": 8,
+        "recompute": 8
+      },
+      "certificate_calls": 1,
+      "continued": false,
+      "fallback": true,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "b5008363a7c84a040079dbae00d4469d82a55b4ba53522147b330d0d74b4275d",
+        8,
+        "continue"
+      ],
+      "method": "continue",
+      "branch": "reject",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 1
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 1
+      },
+      "model_calls": 2,
+      "per_role_steps": {
+        "repair": 8,
+        "recompute": 8
+      },
+      "certificate_calls": 1,
+      "continued": false,
+      "fallback": true,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "11421107858d6e175f0d15c41dbb42ffa0de56fa31c00c72c14f09f33177aaec",
+        8,
+        "recompute_total"
+      ],
+      "method": "recompute_total",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 0,
+        "recompute": 1
+      },
+      "decode_calls": {
+        "repair": 0,
+        "recompute": 1
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 0,
+        "recompute": 16
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "11421107858d6e175f0d15c41dbb42ffa0de56fa31c00c72c14f09f33177aaec",
+        8,
+        "pure_copy"
+      ],
+      "method": "pure_copy",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 0,
+      "encode_calls": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "model_calls": 0,
+      "per_role_steps": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 127
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "11421107858d6e175f0d15c41dbb42ffa0de56fa31c00c72c14f09f33177aaec",
+        8,
+        "repair_total"
+      ],
+      "method": "repair_total",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 16,
+        "recompute": 0
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "11421107858d6e175f0d15c41dbb42ffa0de56fa31c00c72c14f09f33177aaec",
+        8,
+        "copysafe"
+      ],
+      "method": "copysafe",
+      "branch": "accept",
+      "prefix_rounds": 8,
+      "actual_rounds": 8,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 8,
+        "recompute": 0
+      },
+      "certificate_calls": 1,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 126
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "11421107858d6e175f0d15c41dbb42ffa0de56fa31c00c72c14f09f33177aaec",
+        8,
+        "continue"
+      ],
+      "method": "continue",
+      "branch": "accept",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 2,
+        "recompute": 0
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 16,
+        "recompute": 0
+      },
+      "certificate_calls": 1,
+      "continued": true,
+      "fallback": false,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "4124df6ed8d24d1b187392e1b9b62f89867d596dbbf5633b66d89c70dfd139a2",
+        8,
+        "recompute_total"
+      ],
+      "method": "recompute_total",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 0,
+        "recompute": 1
+      },
+      "decode_calls": {
+        "repair": 0,
+        "recompute": 1
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 0,
+        "recompute": 16
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "4124df6ed8d24d1b187392e1b9b62f89867d596dbbf5633b66d89c70dfd139a2",
+        8,
+        "pure_copy"
+      ],
+      "method": "pure_copy",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 0,
+      "encode_calls": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "model_calls": 0,
+      "per_role_steps": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 511
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "4124df6ed8d24d1b187392e1b9b62f89867d596dbbf5633b66d89c70dfd139a2",
+        8,
+        "repair_total"
+      ],
+      "method": "repair_total",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 16,
+        "recompute": 0
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "4124df6ed8d24d1b187392e1b9b62f89867d596dbbf5633b66d89c70dfd139a2",
+        8,
+        "copysafe"
+      ],
+      "method": "copysafe",
+      "branch": "reject",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 1
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 1
+      },
+      "model_calls": 2,
+      "per_role_steps": {
+        "repair": 8,
+        "recompute": 8
+      },
+      "certificate_calls": 1,
+      "continued": false,
+      "fallback": true,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "bottleneck",
+        100,
+        "4124df6ed8d24d1b187392e1b9b62f89867d596dbbf5633b66d89c70dfd139a2",
+        8,
+        "continue"
+      ],
+      "method": "continue",
+      "branch": "reject",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 1
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 1
+      },
+      "model_calls": 2,
+      "per_role_steps": {
+        "repair": 8,
+        "recompute": 8
+      },
+      "certificate_calls": 1,
+      "continued": false,
+      "fallback": true,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "sssp",
+        101,
+        "c9ae2baa10689e9825ef03298c2c94e4dac32e22091cbc5ebece07ee380fc11f",
+        8,
+        "recompute_total"
+      ],
+      "method": "recompute_total",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 0,
+        "recompute": 1
+      },
+      "decode_calls": {
+        "repair": 0,
+        "recompute": 1
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 0,
+        "recompute": 16
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "sssp",
+        101,
+        "c9ae2baa10689e9825ef03298c2c94e4dac32e22091cbc5ebece07ee380fc11f",
+        8,
+        "pure_copy"
+      ],
+      "method": "pure_copy",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 0,
+      "encode_calls": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "model_calls": 0,
+      "per_role_steps": {
+        "repair": 0,
+        "recompute": 0
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 63
+    },
+    {
+      "key": [
+        "sssp",
+        101,
+        "c9ae2baa10689e9825ef03298c2c94e4dac32e22091cbc5ebece07ee380fc11f",
+        8,
+        "repair_total"
+      ],
+      "method": "repair_total",
+      "branch": "direct",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 16,
+        "recompute": 0
+      },
+      "certificate_calls": 0,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 0
+    },
+    {
+      "key": [
+        "sssp",
+        101,
+        "c9ae2baa10689e9825ef03298c2c94e4dac32e22091cbc5ebece07ee380fc11f",
+        8,
+        "copysafe"
+      ],
+      "method": "copysafe",
+      "branch": "accept",
+      "prefix_rounds": 8,
+      "actual_rounds": 8,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 8,
+        "recompute": 0
+      },
+      "certificate_calls": 1,
+      "continued": false,
+      "fallback": false,
+      "final_copy_count": 53
+    },
+    {
+      "key": [
+        "sssp",
+        101,
+        "c9ae2baa10689e9825ef03298c2c94e4dac32e22091cbc5ebece07ee380fc11f",
+        8,
+        "continue"
+      ],
+      "method": "continue",
+      "branch": "accept",
+      "prefix_rounds": 8,
+      "actual_rounds": 16,
+      "encode_calls": {
+        "repair": 1,
+        "recompute": 0
+      },
+      "decode_calls": {
+        "repair": 2,
+        "recompute": 0
+      },
+      "model_calls": 1,
+      "per_role_steps": {
+        "repair": 16,
+        "recompute": 0
+      },
+      "certificate_calls": 1,
+      "continued": true,
+      "fallback": false,
+      "final_copy_count": 0
+    }
+  ],
+  "notes": [
+    "Five policies use two separately trained networks per task/model seed, not five separately trained models.",
+    "Repair-only runs all nodes. Soft state gating does not skip dense message/update MLPs. Literal old-output selection exists only in gated policies.",
+    "Recompute suppresses old-answer/edit features inside the model; Repair consumes them. Both see the modified graph.",
+    "R counts recurrent message-passing inference steps, not training epochs. Main table R=8; the same policy also supports longer prefixes.",
+    "Each decode includes output normalization and CPU global rooted-path value refresh before later mixing/checks. Counts do not measure all CPU work.",
+    "The learned safety score is available after full prefix computation/decode. Eligible reachable non-source nodes with old parents and score>=threshold copy old parent and scalar; others keep the fresh candidate.",
+    "The input-only certificate checks reachability/rooted paths/scalars and Bellman inequalities with absolute tolerance1e-5. It does not read new exact labels.",
+    "Continue acceptance advances the same pre-mixing neural hidden state/context by8. It does not encode mixed outputs into the hidden state, reapply the old-output mask, or run a second automatic certificate.",
+    "Rejection discards the mixed output and starts an independently encoded Recompute8. No second automatic certificate is run on the returned fallback.",
+    "model_calls is the recorded independently encoded neural-session counter. Continuing the same session adds an advance and decode, not another model_call.",
+    "Equal recurrent steps do not imply equal dense MACs, encoding/decoding counts, decision overhead or time. CopySafe acceptance uses fewer steps by design; formal matched-prefix/depth controls and actual costs must be reported.",
+    "The 35 traces are old-weight execution evidence across7 contexts/6 inputs, not new-model accuracy, branch rates or independent graph replicates. The R8 table uses30 traces across6 contexts."
+  ]
+}
