@@ -38,6 +38,7 @@
 <li>“关键节点”由编辑后的精确答案离线判断：旧路径或旧数值在该节点失效。精确答案不提供给运行时门控。</li>
 </ul></details></section>
 
+<section id="dependency"><h2>漏检关键节点，为什么仍可能没有错误复用？</h2><div class="twocol"><div class="surface"><span class="state">同一旧模型案例的路径拆解</span><h3>修正一个上游前驱，下游两份旧记录也恢复有效</h3><p>128节点瓶颈图中，3个旧路径关键节点一起失效。门控只标出33，实际输出也只更换33的前驱；11和16沿用旧记录，联合答案仍然正确且没有回退。</p><p>因此，门控覆盖1/3与最终错误复用0不矛盾。一个指标看修复前的旧路径，另一个看修复后的联合输出。</p><a href="dependencies/?node=16">切换节点、追踪整条路径与离线回滚 →</a></div><div class="surface"><h3>只回滚33，看下游重新失效</h3><p>交互页保留实际分数和复制掩码，只把保存输出中33的前驱回滚。11和16的复制记录随之失效。这是同一输入上的离线干预，不是新模型、新推理或独立样本。</p><p class="muted">本例边权6→5，不是0.01微扰例。网络仍先计算全部128节点8步，只在输出时选择来源。</p><a href="dependencies/upstream_repair_dependency.pdf">下载静态路径对照 PDF</a></div></div></section>
 <section id="input-profile"><h2>为什么高节点分数，不等于解对整张图</h2>
 <div class="notice"><p><strong>以下是固定输入与“全部复用”的精确统计，不含新模型预测。</strong>共检查 5,200 张测试图；每个任务、图族、规模对应 100 张图。构造图的比例不代表自然图中的发生率。</p></div>
 <p>同一份旧答案，用不同口径评分，结果可能相差很大。例如 512 节点远距离竞争图：路径节点正确率约 99.41%，完整状态正确率约 49.71%，整图正确率为 0。</p>
@@ -86,7 +87,7 @@
 <p class="muted">诊断使用旧的完整权重和既有阈值，不是本轮新模型正式成绩。分阶段观察加入了同步和计时开销，因此不把它画成正式速度对比；完整正式计时和配对统计仍待评测完成。</p>
 </div></section>
 
-<section id="evidence"><h2>证据与进度</h2><div class="twocol"><div class="surface"><span class="state">已核对的开发证据</span><h3>保留成功，也保留失败</h3><ul><li>旧权重开发结果共 6,480 条记录；128 轮补充诊断另有 648 条记录，沿用 12 个旧输入。</li><li>补充诊断未出现非有限输出；增加轮数没有稳定提高正确率。</li><li>这里的安全分不是正确概率保证；最终无错误复用也可能只是回退取消了复制。</li></ul><p class="muted">旧模型阈值按 8 轮校准。长轮数结果仅作诊断，不能替代匹配训练的新模型实验。</p></div>
+<section id="evidence"><h2>证据与进度</h2><div class="twocol"><div class="surface"><span class="state">已核对的开发证据</span><h3>保留成功，也保留失败</h3><ul><li>旧权重开发结果共 6,480 条记录；128 轮补充诊断另有 648 条记录，沿用 12 个旧输入。</li><li>补充诊断未出现非有限输出；增加轮数没有稳定提高正确率。</li><li>这里的安全分不是正确概率保证；最终无错误复用也可能来自上游修复使复制重新有效，或回退取消复制，必须结合路径与复制覆盖判断。</li></ul><p class="muted">旧模型阈值按 8 轮校准。长轮数结果仅作诊断，不能替代匹配训练的新模型实验。</p></div>
 <div class="surface"><span class="state pending">完整正式实验尚未完成</span><h3>完成后更新同一网址</h3><ul><li>5 种主方法与 6 种控制；固定图、扰动和模型种子。</li><li>32–512 节点，多图族、多扰动强度；前缀轮数 8–128，另含远距离竞争路线。</li><li>报告整图正确率、关键误复用、风险漏检、回退修正与包含开销的实际耗时。</li><li>对齐图 ID 与训练种子做配对统计，再发布一页小结和详细报告。</li></ul><p class="muted">正式模型采用共同的逐步 LayerNorm 稳定化版本；与原始模型的区别将在报告中披露。</p></div></div></section>
-<footer><span>发布快照：2026-11-03 03:34 UTC+8 · <a href="evidence.json">页面数据与文件指纹</a></span><span><a href="https://github.com/AndyShan11/Delta-NAR/tree/main/reuse-study">页面源码</a> · 合成图实例</span></footer>
+<footer><span>发布快照：2026-11-03 04:18 UTC+8 · <a href="evidence.json">页面数据与文件指纹</a></span><span><a href="https://github.com/AndyShan11/Delta-NAR/tree/main/reuse-study">页面源码</a> · 合成图实例</span></footer>
 </main></body></html>

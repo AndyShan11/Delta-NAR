@@ -1,0 +1,72 @@
+{
+  "status": "exported_from_browser_and_static_reviewed_source",
+  "stage": "saved_old_model_dependency_case",
+  "unique_inputs": 1,
+  "neural_inferences_added": 0,
+  "states": [
+    "saved_pure_copy",
+    "saved_actual_copysafe",
+    "offline_parent33_rollback"
+  ],
+  "independent_full_state_checks": 3,
+  "source_sha256": "a77e948cd6081dbfc46460196272d3d96dd4d082bb9c2c4968bf61e88b27be0f",
+  "source_cases_sha256": "f0fc9b02710b0e85fb69a708146a8c99cd7950d2fbe6771c1782cdcc7117f41a",
+  "case_data_sha256": "a6b1332da140ca81be3f6237821404776561dab1c63b8a9794c7823fce7e89a7",
+  "files": {
+    "index.html": "3178d7899fa2693fdb965f35defaad9109286bb3cbfcd7d594dc304566923403",
+    "case_data.json": "a6b1332da140ca81be3f6237821404776561dab1c63b8a9794c7823fce7e89a7",
+    "upstream_repair_dependency.png": "644202cb9672139760c94af6af86c337acf7f63613b48650f20c76d7576f5ed7",
+    "upstream_repair_dependency.pdf": "b097e66eca9ba84cc704cd8d22beb9b6acb464c2a13a2c23de53c287d50073dd"
+  },
+  "html_pending": false,
+  "html_sha256": "3178d7899fa2693fdb965f35defaad9109286bb3cbfcd7d594dc304566923403",
+  "template_sha256": "3f69162d4b9f4054941f4863c7d6108bd368bdc64aef071ebfe6610525ccd083",
+  "displayed_nodes": 7,
+  "collapsed_related_nodes": 13,
+  "omitted_unrelated_nodes": 108,
+  "review": {
+    "checked_at_utc": "2026-11-02T20:18:11.865975+00:00",
+    "static_png_reviewed": true,
+    "desktop_client_scroll": [
+      1265,
+      1265
+    ],
+    "mobile_viewport": [
+      390,
+      844
+    ],
+    "mobile_client_scroll": [
+      375,
+      375
+    ],
+    "mobile_canvas_client_scroll": [
+      324,
+      760
+    ],
+    "nodes_switched": [
+      33,
+      11,
+      16
+    ],
+    "rollback_wrong_copies": 2,
+    "actual_wrong_copies": 0,
+    "actual_no_fallback": true,
+    "independent_audit_sha256": "cec9c2e5aa0ed9f8c356b28e10ba3c8f9539b8e6d538ee3d4073cfa1d0a03ff8",
+    "local_screenshot_sha256": "da443d43c72cf03b0027e69630687d8aa6325fc88472f533bdcca320f4e3b128"
+  },
+  "source_export_manifest_sha256": "08cdd5bd3640dcc57be3811aad9b7fed37ebb51de0a0066fb745355e5d733e80",
+  "source_export_files": [
+    {
+      "file": "upstream_repair_dependency.png",
+      "sha256": "644202cb9672139760c94af6af86c337acf7f63613b48650f20c76d7576f5ed7"
+    },
+    {
+      "file": "upstream_repair_dependency.pdf",
+      "sha256": "b097e66eca9ba84cc704cd8d22beb9b6acb464c2a13a2c23de53c287d50073dd"
+    },
+    {
+      "file": "upstream_repair_dependency.svg",
+      "sha256": "6c05655ef3d7956396530671f5b9c13080934dcff06824458745fa1fc1007425"
+    }
+  ]
+}
