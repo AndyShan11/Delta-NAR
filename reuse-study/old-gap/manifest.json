@@ -1,0 +1,50 @@
+{
+  "status": "visually_reviewed",
+  "new_formal_results": false,
+  "visually_reviewed": true,
+  "unique_inputs": 18,
+  "methods": 5,
+  "conditions": 6,
+  "source_sha256": "126e3836f2e62468e72e4021d0b2e34bc92c686091f2dbbb7af241bdf099be6a",
+  "analysis_sha256": "be3a060de40f1be8598afb58284e63ee91af633455b37f145215d8539ef583fa",
+  "files": {
+    "node_mean_vs_whole_graph.png": "e81724329bdcb02ca08c5f4b90a374ad4ba9fc344b85901ddcfd8caecde53eff",
+    "node_mean_vs_whole_graph.svg": "a00704417f07d4ad44bd62f5cc2f392d4f4a644f49a63096c9b71141257a93bd",
+    "figure_source.json": "ab102abd7d29f5e3958464e8d7e2a25520f81e2889f97ddb5ddcac7efc5d96b1"
+  },
+  "reviewed_at_utc": "2026-11-03T00:14:22.868066+00:00",
+  "png_size": [
+    3000,
+    2240
+  ],
+  "journal_specific_compliance_claimed": false,
+  "review_notes": [
+    "Actual delivered PNG inspected at full resolution. All6panels/5methods retained; no clipping.",
+    "Initial legend overlapped x-axis labels; increased bottom area/height and re-inspected regenerated PNG.",
+    "Common0-100%scale; marker shape and fill distinguish scores without relying on color.",
+    "Explicit old-weight stage,18uniqueinputs,3graphs*2seeds per condition, paired input but unequal work, no population inference."
+  ],
+  "visual_review_source_sha256": "c9e946bb6d3328ac86062d2c4f714f9057ad834871c87d8ce6399ae5ca09e48b",
+  "source_export_files": {
+    "node_mean_vs_whole_graph.png": "e81724329bdcb02ca08c5f4b90a374ad4ba9fc344b85901ddcfd8caecde53eff",
+    "node_mean_vs_whole_graph.svg": "c677d48cfd608cee41fd420cf90dcbbf08b1a2c59b62562e9bbbdce2d6cddcfc",
+    "figure_source.json": "ab102abd7d29f5e3958464e8d7e2a25520f81e2889f97ddb5ddcac7efc5d96b1"
+  },
+  "source_export_manifest_sha256": "5f7cec11ca6d91523b1a27422cf43975fda47b744720c65231d807226ecec8b0",
+  "text_export_line_endings": "LF",
+  "independent_saved_output_audit": {
+    "status": "PASS",
+    "verified_at_utc": "2026-11-03T00:14:23.966681+00:00",
+    "actual_old_rows_bound": 6480,
+    "unique_graph_inputs": 90,
+    "all_1080_cohorts_bound": true,
+    "all_30_plotted_rows_bound": true,
+    "old_sssp_sparse_n128_continuation_has_zero_stale_old_nodes_and_six_regressions": true,
+    "all_r8_copy_safe_errors_are_fresh_fallback_outputs": true,
+    "new_formal_results": false,
+    "new_neural_inferences": 0,
+    "analysis_sha256": "be3a060de40f1be8598afb58284e63ee91af633455b37f145215d8539ef583fa",
+    "figure_manifest_sha256": "5f7cec11ca6d91523b1a27422cf43975fda47b744720c65231d807226ecec8b0",
+    "verifier_sha256": "bee0c13337ceb7cbad52eca06e2e9ce23178905d3f702667c4e575fb11a84a61"
+  }
+}
